@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/aclements/go-gg/table"
-	"golang.org/x/perf/internal/diff"
+	"golang.org/x/perf/pkg/diff"
 )
 
 func TestTableToJS(t *testing.T) {

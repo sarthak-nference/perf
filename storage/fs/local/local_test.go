@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"golang.org/x/perf/internal/diff"
+	"golang.org/x/perf/pkg/diff"
 )
 
 func TestNewWriter(t *testing.T) {

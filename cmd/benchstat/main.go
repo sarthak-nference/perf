@@ -403,7 +403,7 @@ import (
 	"golang.org/x/perf/benchfmt"
 	"golang.org/x/perf/benchmath"
 	"golang.org/x/perf/benchproc"
-	"golang.org/x/perf/cmd/benchstat/internal/benchtab"
+	"golang.org/x/perf/cmd/benchstat/pkg/benchtab"
 )
 
 // TODO: Add a flag to perform Holm–Bonferroni correction for

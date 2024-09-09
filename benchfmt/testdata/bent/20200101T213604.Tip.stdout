@@ -77,7 +77,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  170857	      7009 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  170857	      7009 ns/op
 PASS
 PASS
 goos: linux
@@ -268,7 +268,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  168592	      6990 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  168592	      6990 ns/op
 PASS
 PASS
 goos: linux
@@ -459,7 +459,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  170719	      7037 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  170719	      7037 ns/op
 PASS
 PASS
 goos: linux
@@ -650,7 +650,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  170067	      6996 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  170067	      6996 ns/op
 PASS
 PASS
 goos: linux
@@ -841,7 +841,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  168182	      7039 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  168182	      7039 ns/op
 PASS
 PASS
 goos: linux
@@ -1032,7 +1032,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  168374	      7004 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  168374	      7004 ns/op
 PASS
 PASS
 goos: linux
@@ -1223,7 +1223,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  169632	      7039 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  169632	      7039 ns/op
 PASS
 PASS
 goos: linux
@@ -1414,7 +1414,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  169257	      7054 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  169257	      7054 ns/op
 PASS
 PASS
 goos: linux
@@ -1605,7 +1605,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  169147	      7025 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  169147	      7025 ns/op
 PASS
 PASS
 goos: linux
@@ -1796,7 +1796,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  169672	      7085 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  169672	      7085 ns/op
 PASS
 PASS
 goos: linux
@@ -1987,7 +1987,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  169510	      7007 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  169510	      7007 ns/op
 PASS
 PASS
 goos: linux
@@ -2178,7 +2178,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  169500	      7044 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  169500	      7044 ns/op
 PASS
 PASS
 goos: linux
@@ -2369,7 +2369,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  167499	      7120 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  167499	      7120 ns/op
 PASS
 PASS
 goos: linux
@@ -2560,7 +2560,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  168192	      7042 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  168192	      7042 ns/op
 PASS
 PASS
 goos: linux
@@ -2751,7 +2751,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  170744	      7038 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  170744	      7038 ns/op
 PASS
 PASS
 goos: linux
@@ -2942,7 +2942,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  169057	      7012 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  169057	      7012 ns/op
 PASS
 PASS
 goos: linux
@@ -3133,7 +3133,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  149244	      7666 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  149244	      7666 ns/op
 PASS
 PASS
 goos: linux
@@ -3324,7 +3324,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  169412	      7056 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  169412	      7056 ns/op
 PASS
 PASS
 goos: linux
@@ -3515,7 +3515,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  168069	      7020 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  168069	      7020 ns/op
 PASS
 PASS
 goos: linux
@@ -3706,7 +3706,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  169350	      7024 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  169350	      7024 ns/op
 PASS
 PASS
 goos: linux
@@ -3897,7 +3897,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  172252	      7017 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  172252	      7017 ns/op
 PASS
 PASS
 goos: linux
@@ -4088,7 +4088,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  170804	      7024 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  170804	      7024 ns/op
 PASS
 PASS
 goos: linux
@@ -4279,7 +4279,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  168061	      6972 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  168061	      6972 ns/op
 PASS
 PASS
 goos: linux
@@ -4470,7 +4470,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  169461	      7221 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  169461	      7221 ns/op
 PASS
 PASS
 goos: linux
@@ -4661,7 +4661,7 @@ PASS
 goos: linux
 goarch: amd64
 pkg: k8s.io/kubernetes/pkg/api/testing
-BenchmarkEncodeCodecFromInternalProtobuf-12    	  144106	      7819 ns/op
+BenchmarkEncodeCodecFrompkgProtobuf-12    	  144106	      7819 ns/op
 PASS
 PASS
 goos: linux

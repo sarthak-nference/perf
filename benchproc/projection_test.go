@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"golang.org/x/perf/benchfmt"
-	"golang.org/x/perf/benchproc/internal/parse"
+	"golang.org/x/perf/benchproc/pkg/parse"
 )
 
 // mustParse parses a single projection.

@@ -8,7 +8,7 @@ import (
 	"fmt"
 
 	"golang.org/x/perf/benchfmt"
-	"golang.org/x/perf/benchproc/internal/parse"
+	"golang.org/x/perf/benchproc/pkg/parse"
 )
 
 // A Filter filters benchmarks and benchmark observations.

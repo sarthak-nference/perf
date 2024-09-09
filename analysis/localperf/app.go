@@ -17,7 +17,7 @@ import (
 	"os"
 
 	"golang.org/x/perf/analysis/app"
-	"golang.org/x/perf/internal/basedir"
+	"golang.org/x/perf/pkg/basedir"
 	"golang.org/x/perf/storage"
 )
 

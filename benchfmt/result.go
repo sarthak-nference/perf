@@ -27,11 +27,11 @@ import "bytes"
 // allocation.
 type Result struct {
 	// Config is the set of key/value configuration pairs for this result,
-	// including file and internal configuration. This does not include
+	// including file and pkg configuration. This does not include
 	// sub-name configuration.
 	//
 	// This slice is mutable, as are the values in the slice.
-	// Result internally maintains an index of the keys of this slice,
+	// Result pkgly maintains an index of the keys of this slice,
 	// so callers must use SetConfig to add or delete keys,
 	// but may modify values in place. There is one exception to this:
 	// for convenience, new Results can be initialized directly,
@@ -66,12 +66,12 @@ type Result struct {
 
 // A Config is a single key/value configuration pair.
 // This can be a file configuration, which was read directly from
-// a benchmark results file; or an "internal" configuration that was
+// a benchmark results file; or an "pkg" configuration that was
 // supplied by tooling.
 type Config struct {
 	Key   string
 	Value []byte
-	File  bool // Set if this is a file configuration key, otherwise internal
+	File  bool // Set if this is a file configuration key, otherwise pkg
 }
 
 // Note: I tried many approaches to Config. Using two strings is nice
@@ -124,7 +124,7 @@ func (r *Result) Clone() *Result {
 }
 
 // SetConfig sets configuration key to value, overriding or
-// adding the configuration as necessary, and marks it internal.
+// adding the configuration as necessary, and marks it pkg.
 // If value is "", SetConfig deletes key.
 func (r *Result) SetConfig(key, value string) {
 	if value == "" {

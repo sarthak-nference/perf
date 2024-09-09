@@ -8784,7 +8784,7 @@ Benchmarkbloom_bloom_text 1 1274309 text-bytes
 Benchmarkbloom_bloom_data 1 35312 data-bytes
 Benchmarkbloom_bloom_rodata 1 470642 rodata-bytes
 Benchmarkbloom_bloom_pclntab 1 812920 pclntab-bytes
-fatal error: runtime: internal error: misuse of lockOSThread/unlockOSThread
+fatal error: runtime: pkg error: misuse of lockOSThread/unlockOSThread
 
 runtime stack:
 runtime.throw(0x5dada6, 0x3e)
@@ -8862,7 +8862,7 @@ tmp stmt args kind quality wc =  2 tmp-bench-dwarf-2245595
 goos: linux
 goarch: amd64
 pkg:
-fatal error: runtime: internal error: misuse of lockOSThread/unlockOSThread
+fatal error: runtime: pkg error: misuse of lockOSThread/unlockOSThread
 
 runtime stack:
 runtime.throw(0x5dada6, 0x3e)

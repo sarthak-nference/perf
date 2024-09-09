@@ -11,7 +11,7 @@ import (
 	"sync"
 
 	"golang.org/x/perf/benchfmt"
-	"golang.org/x/perf/benchproc/internal/parse"
+	"golang.org/x/perf/benchproc/pkg/parse"
 )
 
 // TODO: If we support comparison operators in filter expressions,

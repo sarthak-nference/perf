@@ -99,12 +99,12 @@ func commonProjection(keys []Key) *Projection {
 	return s
 }
 
-// keyNode is the internal heap-allocated object backing a Key.
+// keyNode is the pkg heap-allocated object backing a Key.
 // This allows Key itself to be a value type whose equality is
 // determined by the pointer equality of the underlying keyNode.
 type keyNode struct {
 	proj *Projection
-	// vals are the values in this Key, indexed by fieldInternal.idx. Trailing
+	// vals are the values in this Key, indexed by fieldpkg.idx. Trailing
 	// ""s are always trimmed.
 	//
 	// Notably, this is *not* in the order of the flattened schema. This is

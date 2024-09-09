@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strings"
 
-	"golang.org/x/perf/internal/stats"
+	"golang.org/x/perf/pkg/stats"
 )
 
 // A Table is a table for display in the benchstat output.

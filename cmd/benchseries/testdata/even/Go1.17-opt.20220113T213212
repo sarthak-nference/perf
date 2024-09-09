@@ -8888,7 +8888,7 @@ tmp stmt args kind quality wc =  2 tmp-bench-dwarf-2232834
 goos: linux
 goarch: amd64
 pkg:
-fatal error: runtime: internal error: misuse of lockOSThread/unlockOSThread
+fatal error: runtime: pkg error: misuse of lockOSThread/unlockOSThread
 
 runtime stack:
 runtime.throw(0x5dada6, 0x3e)
@@ -9122,7 +9122,7 @@ tmp stmt args kind quality wc =  2 tmp-bench-dwarf-2275009
 goos: linux
 goarch: amd64
 pkg:
-fatal error: runtime: internal error: misuse of lockOSThread/unlockOSThread
+fatal error: runtime: pkg error: misuse of lockOSThread/unlockOSThread
 
 runtime stack:
 runtime.throw(0x5dada6, 0x3e)
@@ -9186,7 +9186,7 @@ tmp stmt args kind quality wc =  2 tmp-bench-dwarf-2283258
 goos: linux
 goarch: amd64
 pkg:
-fatal error: runtime: internal error: misuse of lockOSThread/unlockOSThread
+fatal error: runtime: pkg error: misuse of lockOSThread/unlockOSThread
 
 runtime stack:
 runtime.throw(0x5dada6, 0x3e)

@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/perf/internal/stats"
+	"golang.org/x/perf/pkg/stats"
 	"golang.org/x/perf/storage/benchfmt"
 )
 

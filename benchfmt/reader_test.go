@@ -271,23 +271,23 @@ BenchmarkOne 100 1 ns/op
 	}
 }
 
-func TestReaderInternalConfig(t *testing.T) {
+func TestReaderpkgConfig(t *testing.T) {
 	got, _ := parseAll(t, `
-# Test initial internal config
+# Test initial pkg config
 Benchmark1 100 1 ns/op
-# Overwrite internal config with file config
+# Overwrite pkg config with file config
 key1: file1
 key3: file3
 Benchmark2 100 1 ns/op
-# Delete internal config, check that file config is right
+# Delete pkg config, check that file config is right
 key2:
 Benchmark3 100 1 ns/op
 	`, func(r *Reader, sr io.Reader) {
-		r.Reset(sr, "test", "key1", "internal1", "key2", "internal2")
+		r.Reset(sr, "test", "key1", "pkg1", "key2", "pkg2")
 	})
 	want := []Record{
-		r("1", 100).v(1, "ns/op").config("key1", "*internal1", "key2", "*internal2").res,
-		r("2", 100).v(1, "ns/op").config("key1", "file1", "key2", "*internal2", "key3", "file3").res,
+		r("1", 100).v(1, "ns/op").config("key1", "*pkg1", "key2", "*pkg2").res,
+		r("2", 100).v(1, "ns/op").config("key1", "file1", "key2", "*pkg2", "key3", "file3").res,
 		r("3", 100).v(1, "ns/op").config("key1", "file1", "key3", "file3").res,
 	}
 	compareRecords(t, got, want)

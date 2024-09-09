@@ -9,7 +9,7 @@ package benchstat
 import (
 	"errors"
 
-	"golang.org/x/perf/internal/stats"
+	"golang.org/x/perf/pkg/stats"
 )
 
 // A DeltaTest compares the old and new metrics and returns the
@@ -53,11 +53,11 @@ func UTest(old, new *Metrics) (pval float64, err error) {
 	return u.P, nil
 }
 
-// convertErr converts from the stats package's internal errors
+// convertErr converts from the stats package's pkg errors
 // to errors exported by this package and expected from
 // a DeltaTest.
 // Using different errors makes it possible for clients to use
-// package benchstat without access to the internal stats package,
+// package benchstat without access to the pkg stats package,
 // and it also gives us a chance to use shorter error messages.
 func convertErr(err error) error {
 	switch err {

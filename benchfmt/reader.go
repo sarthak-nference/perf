@@ -13,7 +13,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"golang.org/x/perf/benchfmt/internal/bytesconv"
+	"golang.org/x/perf/benchfmt/pkg/bytesconv"
 	"golang.org/x/perf/benchunit"
 )
 
@@ -79,7 +79,7 @@ func (r *Reader) newSyntaxError(msg string) *SyntaxError {
 // It does NOT reset unit metadata because it carries across files.
 //
 // initConfig is an alternating sequence of keys and values.
-// Reset will install these as the initial internal configuration
+// Reset will install these as the initial pkg configuration
 // before any results are read from the input file.
 func (r *Reader) Reset(ior io.Reader, fileName string, initConfig ...string) {
 	r.s = bufio.NewScanner(ior)

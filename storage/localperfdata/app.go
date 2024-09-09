@@ -16,7 +16,7 @@ import (
 	"log"
 	"net/http"
 
-	"golang.org/x/perf/internal/basedir"
+	"golang.org/x/perf/pkg/basedir"
 	"golang.org/x/perf/storage/app"
 	"golang.org/x/perf/storage/db"
 	_ "golang.org/x/perf/storage/db/sqlite3"

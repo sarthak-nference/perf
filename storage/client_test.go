@@ -14,7 +14,7 @@ import (
 	"reflect"
 	"testing"
 
-	"golang.org/x/perf/internal/diff"
+	"golang.org/x/perf/pkg/diff"
 	"golang.org/x/perf/storage/benchfmt"
 )
 

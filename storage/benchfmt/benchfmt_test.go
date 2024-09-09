@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/perf/internal/diff"
+	"golang.org/x/perf/pkg/diff"
 )
 
 func readAllResults(t *testing.T, r *Reader) []*Result {
