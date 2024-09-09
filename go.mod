@@ -1,4 +1,4 @@
-github.com/sarthak-nference/perf
+module github.com/sarthak-nference/perf
 
 go 1.18
 
