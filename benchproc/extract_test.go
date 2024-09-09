@@ -7,7 +7,7 @@ package benchproc
 import (
 	"testing"
 
-	"golang.org/x/perf/benchfmt"
+	"github.com/sarthak-nference/perf/benchfmt"
 )
 
 func checkNameExtractor(t *testing.T, x extractor, fullName string, want string) {

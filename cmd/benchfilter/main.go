@@ -7,7 +7,7 @@
 // are provided, it reads from stdin.
 //
 // The filter language is described at
-// https://pkg.go.dev/golang.org/x/perf/cmd/benchstat#Filtering
+// https://pkg.go.dev/github.com/sarthak-nference/perf/cmd/benchstat#Filtering
 package main
 
 import (
@@ -16,8 +16,8 @@ import (
 	"log"
 	"os"
 
-	"golang.org/x/perf/benchfmt"
-	"golang.org/x/perf/benchproc"
+	"github.com/sarthak-nference/perf/benchfmt"
+	"github.com/sarthak-nference/perf/benchproc"
 )
 
 func usage() {
@@ -28,7 +28,7 @@ and writes filtered benchmark results to stdout. If no inputs are
 provided, it reads from stdin.
 
 The filter language is described at
-https://pkg.go.dev/golang.org/x/perf/cmd/benchstat#hdr-Filtering
+https://pkg.go.dev/github.com/sarthak-nference/perf/cmd/benchstat#hdr-Filtering
 `)
 	flag.PrintDefaults()
 }

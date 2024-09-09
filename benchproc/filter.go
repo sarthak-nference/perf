@@ -7,8 +7,8 @@ package benchproc
 import (
 	"fmt"
 
-	"golang.org/x/perf/benchfmt"
-	"golang.org/x/perf/benchproc/pkg/parse"
+	"github.com/sarthak-nference/perf/benchfmt"
+	"github.com/sarthak-nference/perf/benchproc/pkg/parse"
 )
 
 // A Filter filters benchmarks and benchmark observations.
@@ -25,7 +25,7 @@ type filterFn func(res *benchfmt.Result) (mask, bool)
 
 // NewFilter constructs a result filter from a boolean filter
 // expression, such as ".name:Copy /size:4k". See "go doc
-// golang.org/x/perf/benchproc/syntax" for a description of filter
+// github.com/sarthak-nference/perf/benchproc/syntax" for a description of filter
 // syntax.
 //
 // To create a filter that matches everything, pass "*" for query.

@@ -8,7 +8,7 @@
 // This package supports a pipeline processing model based around
 // domain-specific languages for filtering and projecting benchmark
 // results. These languages are described in "go doc
-// golang.org/x/perf/benchproc/syntax".
+// github.com/sarthak-nference/perf/benchproc/syntax".
 //
 // The typical steps for processing a stream of benchmark
 // results are:

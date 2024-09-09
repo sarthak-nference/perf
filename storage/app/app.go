@@ -11,8 +11,8 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"golang.org/x/perf/storage/db"
-	"golang.org/x/perf/storage/fs"
+	"github.com/sarthak-nference/perf/storage/db"
+	"github.com/sarthak-nference/perf/storage/fs"
 )
 
 // App manages the storage server logic. Construct an App instance

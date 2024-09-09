@@ -10,7 +10,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"golang.org/x/perf/storage"
+	"github.com/sarthak-nference/perf/storage"
 )
 
 // index redirects / to /search.

@@ -18,8 +18,8 @@ import (
 	"strings"
 	"time"
 
-	"golang.org/x/perf/storage/benchfmt"
-	"golang.org/x/perf/storage/db"
+	"github.com/sarthak-nference/perf/storage/benchfmt"
+	"github.com/sarthak-nference/perf/storage/db"
 )
 
 // upload is the handler for the /upload endpoint. It serves a form on

@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"golang.org/x/perf/benchfmt"
+	"github.com/sarthak-nference/perf/benchfmt"
 )
 
 func makeConfig(key, value string) benchfmt.Config {

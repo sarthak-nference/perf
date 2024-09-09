@@ -13,8 +13,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"golang.org/x/perf/benchfmt/pkg/bytesconv"
-	"golang.org/x/perf/benchunit"
+	"github.com/sarthak-nference/perf/benchfmt/pkg/bytesconv"
+	"github.com/sarthak-nference/perf/benchunit"
 )
 
 // A Reader reads the Go benchmark format.

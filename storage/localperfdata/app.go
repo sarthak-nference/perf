@@ -16,12 +16,12 @@ import (
 	"log"
 	"net/http"
 
-	"golang.org/x/perf/pkg/basedir"
-	"golang.org/x/perf/storage/app"
-	"golang.org/x/perf/storage/db"
-	_ "golang.org/x/perf/storage/db/sqlite3"
-	"golang.org/x/perf/storage/fs"
-	"golang.org/x/perf/storage/fs/local"
+	"github.com/sarthak-nference/perf/pkg/basedir"
+	"github.com/sarthak-nference/perf/storage/app"
+	"github.com/sarthak-nference/perf/storage/db"
+	_ "github.com/sarthak-nference/perf/storage/db/sqlite3"
+	"github.com/sarthak-nference/perf/storage/fs"
+	"github.com/sarthak-nference/perf/storage/fs/local"
 )
 
 var (
@@ -29,7 +29,7 @@ var (
 	viewURLBase = flag.String("view_url_base", "", "/upload response with `URL` for viewing")
 	dsn         = flag.String("dsn", ":memory:", "sqlite `dsn`")
 	data        = flag.String("data", "", "data `directory` (in-memory if empty)")
-	baseDir     = flag.String("base_dir", basedir.Find("golang.org/x/perf/storage/appengine"), "base `directory` for static files")
+	baseDir     = flag.String("base_dir", basedir.Find("github.com/sarthak-nference/perf/storage/appengine"), "base `directory` for static files")
 )
 
 func main() {

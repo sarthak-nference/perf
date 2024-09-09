@@ -16,8 +16,8 @@ import (
 	"reflect"
 	"testing"
 
-	"golang.org/x/perf/storage"
-	"golang.org/x/perf/storage/benchfmt"
+	"github.com/sarthak-nference/perf/storage"
+	"github.com/sarthak-nference/perf/storage/benchfmt"
 )
 
 func TestQuery(t *testing.T) {

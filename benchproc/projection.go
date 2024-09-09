@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/perf/benchfmt"
-	"golang.org/x/perf/benchproc/pkg/parse"
+	"github.com/sarthak-nference/perf/benchfmt"
+	"github.com/sarthak-nference/perf/benchproc/pkg/parse"
 )
 
 // TODO: If we support comparison operators in filter expressions,
@@ -37,7 +37,7 @@ type ProjectionParser struct {
 // Parse parses a single projection expression, such as ".name,/size".
 // A projection expression describes how to extract fields of a
 // benchfmt.Result into a Key and how to order the resulting Keys. See
-// "go doc golang.org/x/perf/benchproc/syntax" for a description of
+// "go doc github.com/sarthak-nference/perf/benchproc/syntax" for a description of
 // projection syntax.
 //
 // A projection expression may also imply a filter, for example if

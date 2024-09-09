@@ -17,10 +17,10 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/perf/pkg/diff"
-	"golang.org/x/perf/storage/benchfmt"
-	. "golang.org/x/perf/storage/db"
-	"golang.org/x/perf/storage/db/dbtest"
+	"github.com/sarthak-nference/perf/pkg/diff"
+	"github.com/sarthak-nference/perf/storage/benchfmt"
+	. "github.com/sarthak-nference/perf/storage/db"
+	"github.com/sarthak-nference/perf/storage/db/dbtest"
 )
 
 // Most of the db package is tested via the end-to-end-tests in perf/storage/app.

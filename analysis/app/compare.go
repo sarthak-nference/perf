@@ -18,9 +18,9 @@ import (
 	"strings"
 	"unicode"
 
-	"golang.org/x/perf/benchstat"
-	"golang.org/x/perf/storage/benchfmt"
-	"golang.org/x/perf/storage/query"
+	"github.com/sarthak-nference/perf/benchstat"
+	"github.com/sarthak-nference/perf/storage/benchfmt"
+	"github.com/sarthak-nference/perf/storage/query"
 )
 
 // A resultGroup holds a list of results and tracks the distinct labels found in that list.

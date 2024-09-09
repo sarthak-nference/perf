@@ -17,7 +17,7 @@ import (
 	"net/url"
 
 	"golang.org/x/net/context/ctxhttp"
-	"golang.org/x/perf/storage/benchfmt"
+	"github.com/sarthak-nference/perf/storage/benchfmt"
 )
 
 // A Client issues queries to a performance data storage server.
@@ -228,7 +228,7 @@ func (c *Client) NewUpload(ctx context.Context) *Upload {
 		return &Upload{err: err}
 	}
 	req.Header.Set("Content-Type", mpw.FormDataContentType())
-	req.Header.Set("User-Agent", "golang.org/x/perf/storage")
+	req.Header.Set("User-Agent", "github.com/sarthak-nference/perf/storage")
 	errCh := make(chan error)
 	u := &Upload{pw: pw, mpw: mpw, errCh: errCh}
 	go func() {

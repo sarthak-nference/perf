@@ -25,8 +25,8 @@ import (
 
 	"cloud.google.com/go/storage"
 	_ "github.com/GoogleCloudPlatform/cloudsql-proxy/proxy/dialers/mysql"
-	"golang.org/x/perf/storage/benchfmt"
-	"golang.org/x/perf/storage/db"
+	"github.com/sarthak-nference/perf/storage/benchfmt"
+	"github.com/sarthak-nference/perf/storage/db"
 	"google.golang.org/api/iterator"
 )
 

@@ -13,8 +13,8 @@ import (
 	"sort"
 	"time"
 
-	"golang.org/x/perf/benchfmt"
-	"golang.org/x/perf/benchproc"
+	"github.com/sarthak-nference/perf/benchfmt"
+	"github.com/sarthak-nference/perf/benchproc"
 )
 
 // A Cell is the observations for part of a benchmark comparison.

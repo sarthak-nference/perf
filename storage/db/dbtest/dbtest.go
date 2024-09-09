@@ -9,8 +9,8 @@ package dbtest
 import (
 	"testing"
 
-	"golang.org/x/perf/storage/db"
-	_ "golang.org/x/perf/storage/db/sqlite3"
+	"github.com/sarthak-nference/perf/storage/db"
+	_ "github.com/sarthak-nference/perf/storage/db/sqlite3"
 )
 
 // NewDB makes a connection to a testing database, either sqlite3 or

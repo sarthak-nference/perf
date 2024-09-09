@@ -4,7 +4,7 @@ capture both a significant change and a non-significant change).
 
 goos: linux
 goarch: amd64
-pkg: golang.org/x/perf/cmd/benchstat/testdata
+pkg: github.com/sarthak-nference/perf/cmd/benchstat/testdata
 BenchmarkEncode/format=json-48         	  714387	      1423 ns/op
 BenchmarkEncode/format=json-48         	  845445	      1416 ns/op
 BenchmarkEncode/format=json-48         	  815714	      1411 ns/op

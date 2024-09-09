@@ -17,10 +17,10 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/perf/storage/db"
-	"golang.org/x/perf/storage/db/dbtest"
-	_ "golang.org/x/perf/storage/db/sqlite3"
-	"golang.org/x/perf/storage/fs"
+	"github.com/sarthak-nference/perf/storage/db"
+	"github.com/sarthak-nference/perf/storage/db/dbtest"
+	_ "github.com/sarthak-nference/perf/storage/db/sqlite3"
+	"github.com/sarthak-nference/perf/storage/fs"
 )
 
 type testApp struct {

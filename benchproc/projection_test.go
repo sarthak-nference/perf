@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/perf/benchfmt"
-	"golang.org/x/perf/benchproc/pkg/parse"
+	"github.com/sarthak-nference/perf/benchfmt"
+	"github.com/sarthak-nference/perf/benchproc/pkg/parse"
 )
 
 // mustParse parses a single projection.

@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"strings"
 
-	"golang.org/x/perf/benchfmt"
+	"github.com/sarthak-nference/perf/benchfmt"
 )
 
 // An extractor returns some field of a benchmark result. The

@@ -9,7 +9,7 @@ package benchstat
 import (
 	"errors"
 
-	"golang.org/x/perf/pkg/stats"
+	"github.com/sarthak-nference/perf/pkg/stats"
 )
 
 // A DeltaTest compares the old and new metrics and returns the

@@ -16,15 +16,15 @@ import (
 	"net/http"
 	"os"
 
-	"golang.org/x/perf/analysis/app"
-	"golang.org/x/perf/pkg/basedir"
-	"golang.org/x/perf/storage"
+	"github.com/sarthak-nference/perf/analysis/app"
+	"github.com/sarthak-nference/perf/pkg/basedir"
+	"github.com/sarthak-nference/perf/storage"
 )
 
 var (
 	addr       = flag.String("addr", "localhost:8080", "serve HTTP on `address`")
 	storageURL = flag.String("storage", "https://perfdata.golang.org", "storage server base `url`")
-	baseDir    = flag.String("base_dir", basedir.Find("golang.org/x/perf/analysis/appengine"), "base `directory` for templates")
+	baseDir    = flag.String("base_dir", basedir.Find("github.com/sarthak-nference/perf/analysis/appengine"), "base `directory` for templates")
 )
 
 func usage() {

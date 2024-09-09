@@ -1,6 +1,6 @@
 # Go benchmark analysis tools
 
-[![Go Reference](https://pkg.go.dev/badge/golang.org/x/perf.svg)](https://pkg.go.dev/golang.org/x/perf)
+[![Go Reference](https://pkg.go.dev/badge/github.com/sarthak-nference/perf.svg)](https://pkg.go.dev/github.com/sarthak-nference/perf)
 
 This subrepository holds tools and packages for analyzing [Go
 benchmark results](https://golang.org/design/14313-benchmark-format),
@@ -22,7 +22,7 @@ result files.
 [perf.golang.org](https://perf.golang.org).
 
 To install all of these commands, run
-`go install golang.org/x/perf/cmd/...@latest`.
+`go install github.com/sarthak-nference/perf/cmd/...@latest`.
 You can also
 `git clone https://go.googlesource.com/perf` and run
 `go install ./cmd/...` in the checkout.

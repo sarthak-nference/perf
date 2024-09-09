@@ -16,9 +16,9 @@ import (
 	"sync"
 
 	"github.com/aclements/go-moremath/stats"
-	"golang.org/x/perf/benchfmt"
-	"golang.org/x/perf/benchmath"
-	"golang.org/x/perf/benchproc"
+	"github.com/sarthak-nference/perf/benchfmt"
+	"github.com/sarthak-nference/perf/benchmath"
+	"github.com/sarthak-nference/perf/benchproc"
 )
 
 // TODO: Color by good/bad (or nothing for unknown units)

@@ -11,7 +11,7 @@ import (
 	"math"
 	"sort"
 
-	"golang.org/x/perf/benchmath"
+	"github.com/sarthak-nference/perf/benchmath"
 )
 
 type CsvOptions int

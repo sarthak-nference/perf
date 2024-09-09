@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/perf/pkg/stats"
-	"golang.org/x/perf/storage/benchfmt"
+	"github.com/sarthak-nference/perf/pkg/stats"
+	"github.com/sarthak-nference/perf/storage/benchfmt"
 )
 
 // A Collection is a collection of benchmark results.

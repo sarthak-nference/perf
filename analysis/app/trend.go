@@ -23,7 +23,7 @@ import (
 	"github.com/aclements/go-gg/generic/slice"
 	"github.com/aclements/go-gg/ggstat"
 	"github.com/aclements/go-gg/table"
-	"golang.org/x/perf/storage"
+	"github.com/sarthak-nference/perf/storage"
 )
 
 // trend handles /trend.

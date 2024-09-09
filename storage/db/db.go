@@ -19,9 +19,9 @@ import (
 	"text/template"
 	"time"
 
-	"golang.org/x/perf/storage"
-	"golang.org/x/perf/storage/benchfmt"
-	"golang.org/x/perf/storage/query"
+	"github.com/sarthak-nference/perf/storage"
+	"github.com/sarthak-nference/perf/storage/benchfmt"
+	"github.com/sarthak-nference/perf/storage/query"
 )
 
 // TODO(quentin): Add Context to every function when App Engine supports Go >=1.8.

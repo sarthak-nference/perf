@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"testing"
 
-	"golang.org/x/perf/benchfmt"
+	"github.com/sarthak-nference/perf/benchfmt"
 )
 
 func TestFilter(t *testing.T) {

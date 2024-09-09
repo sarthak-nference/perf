@@ -9,8 +9,8 @@ import (
 	"log"
 	"os"
 
-	"golang.org/x/perf/benchfmt"
-	"golang.org/x/perf/benchunit"
+	"github.com/sarthak-nference/perf/benchfmt"
+	"github.com/sarthak-nference/perf/benchunit"
 )
 
 // Example shows a complete benchmark processing pipeline that uses

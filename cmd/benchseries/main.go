@@ -11,8 +11,8 @@ import (
 	"os"
 
 	// "github.com/dr2chase/debug-server/debug_client"
-	"golang.org/x/perf/benchfmt"
-	"golang.org/x/perf/benchseries"
+	"github.com/sarthak-nference/perf/benchfmt"
+	"github.com/sarthak-nference/perf/benchseries"
 	// "runtime"
 )
 

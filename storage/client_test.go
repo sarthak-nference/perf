@@ -14,8 +14,8 @@ import (
 	"reflect"
 	"testing"
 
-	"golang.org/x/perf/pkg/diff"
-	"golang.org/x/perf/storage/benchfmt"
+	"github.com/sarthak-nference/perf/pkg/diff"
+	"github.com/sarthak-nference/perf/storage/benchfmt"
 )
 
 func TestQueryError(t *testing.T) {

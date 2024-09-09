@@ -13,7 +13,7 @@ import (
 	"database/sql"
 
 	sqlite3 "github.com/mattn/go-sqlite3"
-	"golang.org/x/perf/storage/db"
+	"github.com/sarthak-nference/perf/storage/db"
 )
 
 func init() {

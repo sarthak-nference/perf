@@ -5,8 +5,8 @@
 package benchfmt
 
 import (
-	"golang.org/x/perf/benchmath"
-	"golang.org/x/perf/benchunit"
+	"github.com/sarthak-nference/perf/benchmath"
+	"github.com/sarthak-nference/perf/benchunit"
 )
 
 // Unit metadata is a single piece of unit metadata.

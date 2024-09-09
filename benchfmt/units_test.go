@@ -7,7 +7,7 @@ package benchfmt
 import (
 	"testing"
 
-	"golang.org/x/perf/benchmath"
+	"github.com/sarthak-nference/perf/benchmath"
 )
 
 func TestReaderUnits(t *testing.T) {

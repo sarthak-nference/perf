@@ -16,9 +16,9 @@ import (
 	"time"
 
 	_ "github.com/go-sql-driver/mysql"
-	"golang.org/x/perf/storage/app"
-	"golang.org/x/perf/storage/db"
-	"golang.org/x/perf/storage/fs/gcs"
+	"github.com/sarthak-nference/perf/storage/app"
+	"github.com/sarthak-nference/perf/storage/db"
+	"github.com/sarthak-nference/perf/storage/fs/gcs"
 	oauth2 "google.golang.org/api/oauth2/v2"
 	"google.golang.org/appengine"
 	aelog "google.golang.org/appengine/log"

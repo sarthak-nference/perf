@@ -8,7 +8,7 @@ package app
 import (
 	"net/http"
 
-	"golang.org/x/perf/storage"
+	"github.com/sarthak-nference/perf/storage"
 )
 
 // App manages the analysis server logic.

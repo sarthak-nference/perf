@@ -10,10 +10,10 @@ import (
 	"io"
 	"strings"
 
-	"golang.org/x/perf/benchmath"
-	"golang.org/x/perf/benchproc"
-	"golang.org/x/perf/benchunit"
-	"golang.org/x/perf/cmd/benchstat/pkg/texttab"
+	"github.com/sarthak-nference/perf/benchmath"
+	"github.com/sarthak-nference/perf/benchproc"
+	"github.com/sarthak-nference/perf/benchunit"
+	"github.com/sarthak-nference/perf/cmd/benchstat/pkg/texttab"
 )
 
 // A Table summarizes and compares benchmark results in a 2D grid.

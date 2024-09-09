@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"golang.org/x/perf/storage/benchfmt"
+	"github.com/sarthak-nference/perf/storage/benchfmt"
 )
 
 func (a *App) search(w http.ResponseWriter, r *http.Request) {

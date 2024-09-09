@@ -9,7 +9,7 @@ import (
 	"context"
 
 	"cloud.google.com/go/storage"
-	"golang.org/x/perf/storage/fs"
+	"github.com/sarthak-nference/perf/storage/fs"
 )
 
 // impl is an fs.FS backed by Google Cloud Storage.

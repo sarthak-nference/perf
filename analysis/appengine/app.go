@@ -12,8 +12,8 @@ import (
 	"os"
 	"time"
 
-	"golang.org/x/perf/analysis/app"
-	"golang.org/x/perf/storage"
+	"github.com/sarthak-nference/perf/analysis/app"
+	"github.com/sarthak-nference/perf/storage"
 	"google.golang.org/appengine"
 )
 

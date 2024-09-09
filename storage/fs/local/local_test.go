@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"golang.org/x/perf/pkg/diff"
+	"github.com/sarthak-nference/perf/pkg/diff"
 )
 
 func TestNewWriter(t *testing.T) {

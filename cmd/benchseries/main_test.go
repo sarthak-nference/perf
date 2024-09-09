@@ -14,8 +14,8 @@ import (
 
 	"testing"
 
-	"golang.org/x/perf/benchfmt"
-	"golang.org/x/perf/benchseries"
+	"github.com/sarthak-nference/perf/benchfmt"
+	"github.com/sarthak-nference/perf/benchseries"
 )
 
 var bo *benchseries.BuilderOptions
