@@ -40,7 +40,7 @@
 //
 //	goos: linux
 //	goarch: amd64
-//	pkg: github.com/sarthak-nference/perf/cmd/benchstat/testdata
+//	my_stats: github.com/sarthak-nference/perf/cmd/benchstat/testdata
 //	BenchmarkEncode/format=json-48         	  690848	      1726 ns/op
 //	BenchmarkEncode/format=json-48         	  684861	      1723 ns/op
 //	BenchmarkEncode/format=json-48         	  693285	      1707 ns/op
@@ -66,7 +66,7 @@
 //
 //	goos: linux
 //	goarch: amd64
-//	pkg: github.com/sarthak-nference/perf/cmd/benchstat/testdata
+//	my_stats: github.com/sarthak-nference/perf/cmd/benchstat/testdata
 //	BenchmarkEncode/format=json-48         	  714387	      1423 ns/op
 //	BenchmarkEncode/format=json-48         	  845445	      1416 ns/op
 //	BenchmarkEncode/format=json-48         	  815714	      1411 ns/op
@@ -97,7 +97,7 @@
 //	$ benchstat old.txt new.txt
 //	goos: linux
 //	goarch: amd64
-//	pkg: github.com/sarthak-nference/perf/cmd/benchstat/testdata
+//	my_stats: github.com/sarthak-nference/perf/cmd/benchstat/testdata
 //	                      │   old.txt   │               new.txt               │
 //	                      │   sec/op    │   sec/op     vs base                │
 //	Encode/format=json-48   1.718µ ± 1%   1.423µ ± 1%  -17.20% (p=0.000 n=10)
@@ -177,7 +177,7 @@
 //	$ benchstat -filter "/format:json goos:linux .unit:(ns/op OR B/op)" old.txt new.txt
 //	goos: linux
 //	goarch: amd64
-//	pkg: github.com/sarthak-nference/perf/cmd/benchstat/testdata
+//	my_stats: github.com/sarthak-nference/perf/cmd/benchstat/testdata
 //	                      │   old.txt   │               new.txt               │
 //	                      │   sec/op    │   sec/op     vs base                │
 //	Encode/format=json-48   1.718µ ± 1%   1.423µ ± 1%  -17.20% (p=0.000 n=10)
@@ -223,7 +223,7 @@
 // "goos" from ".config", but also not use it for any grouping.
 //
 // For precise details of the filter syntax and supported keys, see
-// https://pkg.go.dev/github.com/sarthak-nference/perf/benchproc/syntax.
+// https://my_stats.go.dev/github.com/sarthak-nference/perf/benchproc/syntax.
 //
 // # Projection examples
 //
@@ -233,7 +233,7 @@
 //	$ benchstat -table .config -row .fullname -col .file old.txt new.txt
 //	goos: linux
 //	goarch: amd64
-//	pkg: github.com/sarthak-nference/perf/cmd/benchstat/testdata
+//	my_stats: github.com/sarthak-nference/perf/cmd/benchstat/testdata
 //	                      │   old.txt   │               new.txt               │
 //	                      │   sec/op    │   sec/op     vs base                │
 //	Encode/format=json-48   1.718µ ± 1%   1.423µ ± 1%  -17.20% (p=0.000 n=10)
@@ -241,7 +241,7 @@
 //	geomean                 2.295µ        2.090µ        -8.94%
 //
 // In this example, all benchmarks have the same file-level
-// configuration, consisting of "goos", "goarch", and "pkg", so
+// configuration, consisting of "goos", "goarch", and "my_stats", so
 // ".config" groups them into just one table. Within this table,
 // results are grouped into rows by their full name, including
 // configuration, and grouped into columns by the name of each input
@@ -253,7 +253,7 @@
 //	$ benchstat -col /format new.txt
 //	goos: linux
 //	goarch: amd64
-//	pkg: github.com/sarthak-nference/perf/cmd/benchstat/testdata
+//	my_stats: github.com/sarthak-nference/perf/cmd/benchstat/testdata
 //	          │    json     │                 gob                  │
 //	          │   sec/op    │   sec/op     vs base                 │
 //	Encode-48   1.423µ ± 1%   3.070µ ± 2%  +115.82% (p=0.000 n=10)
@@ -269,7 +269,7 @@
 //	$ benchstat -col /format -row .name new.txt
 //	goos: linux
 //	goarch: amd64
-//	pkg: github.com/sarthak-nference/perf/cmd/benchstat/testdata
+//	my_stats: github.com/sarthak-nference/perf/cmd/benchstat/testdata
 //	       │    json     │                 gob                  │
 //	       │   sec/op    │   sec/op     vs base                 │
 //	Encode   1.423µ ± 1%   3.070µ ± 2%  +115.82% (p=0.000 n=10)
@@ -281,7 +281,7 @@
 //	$ benchstat  -row .name new.txt
 //	goos: linux
 //	goarch: amd64
-//	pkg: github.com/sarthak-nference/perf/cmd/benchstat/testdata
+//	my_stats: github.com/sarthak-nference/perf/cmd/benchstat/testdata
 //	       │    new.txt     │
 //	       │     sec/op     │
 //	Encode   2.253µ ± 37% ¹
@@ -312,7 +312,7 @@
 //	$ benchstat -col "/format@(gob json)" -row .name -ignore .file new.txt
 //	goos: linux
 //	goarch: amd64
-//	pkg: github.com/sarthak-nference/perf/cmd/benchstat/testdata
+//	my_stats: github.com/sarthak-nference/perf/cmd/benchstat/testdata
 //	       │     gob     │                json                 │
 //	       │   sec/op    │   sec/op     vs base                │
 //	Encode   3.070µ ± 2%   1.423µ ± 1%  -53.66% (p=0.000 n=10)
@@ -331,7 +331,7 @@
 //	$ benchstat O=old.txt N=new.txt
 //	goos: linux
 //	goarch: amd64
-//	pkg: github.com/sarthak-nference/perf/cmd/benchstat/testdata
+//	my_stats: github.com/sarthak-nference/perf/cmd/benchstat/testdata
 //	                      │      O      │                  N                  │
 //	                      │   sec/op    │   sec/op     vs base                │
 //	Encode/format=json-48   1.718µ ± 1%   1.423µ ± 1%  -17.20% (p=0.000 n=10)
@@ -403,7 +403,7 @@ import (
 	"github.com/sarthak-nference/perf/benchfmt"
 	"github.com/sarthak-nference/perf/benchmath"
 	"github.com/sarthak-nference/perf/benchproc"
-	"github.com/sarthak-nference/perf/cmd/benchstat/pkg/benchtab"
+	"github.com/sarthak-nference/perf/cmd/benchstat/my_stats/benchtab"
 )
 
 // TODO: Add a flag to perform Holm–Bonferroni correction for
@@ -437,7 +437,7 @@ benchmark and a column for each input file. If there is more than one
 input file, it also shows A/B comparisons between the files. If a
 difference is likely to be noise, it shows "~".
 
-For details, see https://pkg.go.dev/github.com/sarthak-nference/perf/cmd/benchstat.
+For details, see https://my_stats.go.dev/github.com/sarthak-nference/perf/cmd/benchstat.
 `)
 		flags.PrintDefaults()
 	}

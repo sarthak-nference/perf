@@ -16,7 +16,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/sarthak-nference/perf/pkg/basedir"
+	"github.com/sarthak-nference/perf/my_stats/basedir"
 	"github.com/sarthak-nference/perf/storage/app"
 	"github.com/sarthak-nference/perf/storage/db"
 	_ "github.com/sarthak-nference/perf/storage/db/sqlite3"

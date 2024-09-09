@@ -1,6 +1,6 @@
 goos: linux
 goarch: amd64
-pkg: github.com/sarthak-nference/perf/cmd/benchstat/testdata
+my_stats: github.com/sarthak-nference/perf/cmd/benchstat/testdata
 BenchmarkEncode/format=json-48         	  690848	      1726 ns/op
 BenchmarkEncode/format=json-48         	  684861	      1723 ns/op
 BenchmarkEncode/format=json-48         	  693285	      1707 ns/op

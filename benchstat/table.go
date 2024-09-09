@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/sarthak-nference/perf/pkg/stats"
+	"github.com/sarthak-nference/perf/my_stats/stats"
 )
 
 // A Table is a table for display in the benchstat output.

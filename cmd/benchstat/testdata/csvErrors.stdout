@@ -1,6 +1,6 @@
 goos: linux
 goarch: amd64
-pkg: github.com/sarthak-nference/perf/cmd/benchstat/testdata
+my_stats: github.com/sarthak-nference/perf/cmd/benchstat/testdata
 ,new.txt
 ,sec/op,CI
 Encode,2.2530000000000003e-06,37%

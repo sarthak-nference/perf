@@ -1,6 +1,6 @@
 goos: linux
 goarch: amd64
-pkg: index/suffixarray
+my_stats: index/suffixarray
 cpu: Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz
 BenchmarkNew/text=opticks/size=100K/bits=32-8 	     295	   4052123 ns/op	  24.68 MB/s	  401490 B/op	       2 allocs/op
 BenchmarkNew/text=opticks/size=100K/bits=32-8 	     297	   4072122 ns/op	  24.56 MB/s	  401488 B/op	       2 allocs/op

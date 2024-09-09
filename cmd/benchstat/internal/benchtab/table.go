@@ -13,7 +13,7 @@ import (
 	"github.com/sarthak-nference/perf/benchmath"
 	"github.com/sarthak-nference/perf/benchproc"
 	"github.com/sarthak-nference/perf/benchunit"
-	"github.com/sarthak-nference/perf/cmd/benchstat/pkg/texttab"
+	"github.com/sarthak-nference/perf/cmd/benchstat/my_stats/texttab"
 )
 
 // A Table summarizes and compares benchmark results in a 2D grid.

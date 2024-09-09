@@ -1,4 +1,4 @@
-pkg: hash/crc32
+my_stats: hash/crc32
 goarch: amd64
 goos: darwin
 note: hw acceleration disabled

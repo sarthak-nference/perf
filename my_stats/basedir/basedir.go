@@ -15,10 +15,10 @@ import (
 )
 
 // Find locates a directory for the given package.
-// pkg should be the directory that contains the templates and/or static directories.
-// If pkg cannot be found, an empty string will be returned.
-func Find(pkg string) string {
-	cmd := exec.Command("go", "list", "-e", "-f", "{{.Dir}}", pkg)
+// my_stats should be the directory that contains the templates and/or static directories.
+// If my_stats cannot be found, an empty string will be returned.
+func Find(my_stats string) string {
+	cmd := exec.Command("go", "list", "-e", "-f", "{{.Dir}}", my_stats)
 	if out, err := cmd.Output(); err == nil && len(out) > 0 {
 		return string(bytes.TrimRight(out, "\r\n"))
 	}
@@ -28,7 +28,7 @@ func Find(pkg string) string {
 	}
 	if gopath != "" {
 		for _, dir := range strings.Split(gopath, ":") {
-			p := filepath.Join(dir, pkg)
+			p := filepath.Join(dir, my_stats)
 			if _, err := os.Stat(p); err == nil {
 				return p
 			}

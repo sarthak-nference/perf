@@ -125,7 +125,7 @@ type Builder struct {
 
 	filter *benchproc.Filter
 
-	unitBy, tableBy, pkgBy, experimentBy, benchBy, seriesBy, compareBy, numHashBy, denHashBy *benchproc.Projection
+	unitBy, tableBy, my_statsBy, experimentBy, benchBy, seriesBy, compareBy, numHashBy, denHashBy *benchproc.Projection
 	denCompareVal                                                                            string // the string value of compareBy that indicates the control/baseline in a comparison.
 	numCompareVal                                                                            string // the string value of compareBy that indicates the test in a comparison.
 	residue                                                                                  *benchproc.Projection
@@ -253,9 +253,9 @@ func NewBuilder(bo *BuilderOptions) (*Builder, error) {
 		panic("Couldn't parse the .name schema")
 	}
 
-	pkgBy, err := parser.Parse("pkg", nil)
+	my_statsBy, err := parser.Parse("my_stats", nil)
 	if err != nil {
-		panic("Couldn't parse 'pkg' schema")
+		panic("Couldn't parse 'my_stats' schema")
 	}
 
 	seriesBy := mustParse("-series", bo.Series)
@@ -276,7 +276,7 @@ func NewBuilder(bo *BuilderOptions) (*Builder, error) {
 		filter:        filter,
 		unitBy:        unitBy,
 		tableBy:       tableBy,
-		pkgBy:         pkgBy,
+		my_statsBy:         my_statsBy,
 		experimentBy:  experimentBy,
 		benchBy:       benchBy,
 		seriesBy:      seriesBy,
@@ -324,7 +324,7 @@ func (b *Builder) Add(result *benchfmt.Result) {
 	unitCfgs := b.unitBy.ProjectValues(result)
 	tableCfg := b.tableBy.Project(result)
 
-	_ = b.pkgBy.Project(result) // for now we are dropping pkg on the floor
+	_ = b.my_statsBy.Project(result) // for now we are dropping my_stats on the floor
 
 	expCfg := b.experimentBy.Project(result)
 	benchCfg := b.benchBy.Project(result)

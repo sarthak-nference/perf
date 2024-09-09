@@ -1115,13 +1115,13 @@ BenchmarkGonum_lapack_native 1 2293613222 build-real-ns/op 7560107000 build-user
 shortname: klauspost
 goos: linux
 goarch: amd64
-pkg: github.com/dr2chase/benchmarks/klauspost
+my_stats: github.com/dr2chase/benchmarks/klauspost
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 Benchmark_tokens_EstimatedBits-12    	 1549519	       775.9 ns/op	   1.29 MB/s
 shortname: minio
 goos: linux
 goarch: amd64
-pkg: github.com/minio/minio/cmd
+my_stats: github.com/minio/minio/cmd
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDecodehealingTracker-12            	 1775870	       674.4 ns/op	 461.15 MB/s	       0 B/op	       0 allocs/op
 BenchmarkAppendMsgReplicateDecision-12      	1000000000	         0.5752 ns/op	1738.42 MB/s	       0 B/op	       0 allocs/op
@@ -1131,7 +1131,7 @@ BenchmarkMarshalMsgdataUsageCacheInfo-12    	16497579	        69.57 ns/op	      
 shortname: hugo_hugolib
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/hugolib
+my_stats: github.com/gohugoio/hugo/hugolib
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGetPage-12                     	 4957526	       243.9 ns/op
 BenchmarkMergeByLanguage-12             	 1981748	       589.3 ns/op
@@ -1140,7 +1140,7 @@ BenchmarkReplaceShortcodeTokens-12      	  503074	      3112 ns/op
 shortname: ethereum_core
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core
+my_stats: github.com/ethereum/go-ethereum/core
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkPendingDemotion10000-12         	 8754361	       135.9 ns/op
 BenchmarkFuturePromotion10000-12         	464084842	         2.584 ns/op
@@ -1149,7 +1149,7 @@ BenchmarkPoolBatchLocalInsert10000-12    	       2	1030402666 ns/op
 shortname: shopify_sarama
 goos: linux
 goarch: amd64
-pkg: github.com/Shopify/sarama
+my_stats: github.com/Shopify/sarama
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBroker_Open-12               	    6879	    177392 ns/op
 BenchmarkBroker_No_Metrics_Open-12    	    9039	    130242 ns/op
@@ -1159,20 +1159,20 @@ shortname: aws_jsonrpc
 shortname: aws_jsonutil
 goos: linux
 goarch: amd64
-pkg: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
+my_stats: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBuildJSON-12     	  273313	      4188 ns/op
 BenchmarkStdlibJSON-12    	  296830	      4091 ns/op
 shortname: tidwall_tile38
 goos: linux
 goarch: amd64
-pkg: github.com/tidwall/tile38/tests
+my_stats: github.com/tidwall/tile38/tests
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkAll/search/KNN-12     	    3662	    366093 ns/op
 shortname: ethereum_bitutil
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/common/bitutil
+my_stats: github.com/ethereum/go-ethereum/common/bitutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkFastTest2KB-12              	 8871037	       133.9 ns/op
 BenchmarkBaseTest2KB-12              	 1596342	       769.9 ns/op
@@ -1181,13 +1181,13 @@ shortname: ethereum_storage
 shortname: ethereum_ethash
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/consensus/ethash
+my_stats: github.com/ethereum/go-ethereum/consensus/ethash
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashimotoLight-12    	     996	   1197819 ns/op
 shortname: ethereum_ecies
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/crypto/ecies
+my_stats: github.com/ethereum/go-ethereum/crypto/ecies
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGenerateKeyP256-12     	   64753	     18384 ns/op
 BenchmarkGenSharedKeyP256-12    	   16645	     71842 ns/op
@@ -1195,54 +1195,54 @@ BenchmarkGenSharedKeyS256-12    	   18324	     65450 ns/op
 shortname: ethereum_corevm
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core/vm
+my_stats: github.com/ethereum/go-ethereum/core/vm
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkOpDiv128-12    	10960234	       109.0 ns/op
 shortname: ethereum_trie
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/trie
+my_stats: github.com/ethereum/go-ethereum/trie
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashFixedSize/10K-12           	     181	   6660354 ns/op	 6328704 B/op	   77156 allocs/op
 BenchmarkCommitAfterHashFixedSize/10K-12         	      85	  13165116 ns/op	 9045639 B/op	   79993 allocs/op
 shortname: spexs2
 goos: linux
 goarch: amd64
-pkg: github.com/egonelbre/spexs2/_benchmark
+my_stats: github.com/egonelbre/spexs2/_benchmark
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRun/10k/1-12       	       1	23932493621 ns/op
 BenchmarkRun/10k/16-12      	       1	5129269534 ns/op
 shortname: gonum_blas_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/blas/gonum
+my_stats: gonum.org/v1/gonum/blas/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDnrm2MediumPosInc-12        	  297516	      4062 ns/op
 BenchmarkDasumMediumUnitaryInc-12    	 1405024	       853.7 ns/op
 shortname: gonum_lapack_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/lapack/gonum
+my_stats: gonum.org/v1/gonum/lapack/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDgeev/Circulant10-12         	   27184	     43185 ns/op
 BenchmarkDgeev/Circulant100-12        	      72	  16654547 ns/op
 shortname: gonum_mat
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/mat
+my_stats: gonum.org/v1/gonum/mat
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkMulWorkspaceDense1000Hundredth-12    	     100	 125346994 ns/op
 BenchmarkScaleVec10000Inc20-12                	   50138	     23171 ns/op
 shortname: semver
 goos: linux
 goarch: amd64
-pkg: github.com/Masterminds/semver
+my_stats: github.com/Masterminds/semver
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkValidateVersionTildeFail-12    	 1770990	       669.9 ns/op
 shortname: hugo_helpers
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/helpers
+my_stats: github.com/gohugoio/hugo/helpers
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkStripHTML-12                           	  395554	      3035 ns/op
 BenchmarkTestTruncateWordsToWholeSentence-12    	16537174	        72.30 ns/op
@@ -1250,14 +1250,14 @@ BenchmarkEmojiKyokomiSprint-12                  	   32154	     37143 ns/op
 shortname: k8s_cache
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/tools/cache
+my_stats: k8s.io/client-go/tools/cache
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkListener-12                   	 1399638	       897.5 ns/op	      39 B/op	       1 allocs/op
 BenchmarkReflectorResyncChanMany-12    	 3260895	       369.6 ns/op
 shortname: k8s_workqueue
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/util/workqueue
+my_stats: k8s.io/client-go/util/workqueue
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:1-12         	    4006	    312191 ns/op
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:10-12        	   22909	     53270 ns/op
@@ -1266,7 +1266,7 @@ BenchmarkParallelizeUntil/pieces:999,workers:10,chunkSize:13-12         	   2474
 shortname: gonum_topo
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/topo
+my_stats: gonum.org/v1/gonum/graph/topo
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkTarjanSCCGnp_10_tenth-12     	  146566	      8540 ns/op
 BenchmarkTarjanSCCGnp_1000_half-12    	      13	  89038817 ns/op
@@ -1274,27 +1274,27 @@ shortname: gonum_path
 shortname: gonum_community
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/community
+my_stats: gonum.org/v1/gonum/graph/community
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkLouvainDirectedMultiplex-12    	      52	  19244186 ns/op
 shortname: gonum_traverse
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/traverse
+my_stats: gonum.org/v1/gonum/graph/traverse
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkWalkAllBreadthFirstGnp_10_tenth-12      	  306169	      4173 ns/op
 BenchmarkWalkAllBreadthFirstGnp_1000_tenth-12    	      92	  12709796 ns/op
 shortname: capnproto2
 goos: linux
 goarch: amd64
-pkg: zombiezen.com/go/capnproto2
+my_stats: zombiezen.com/go/capnproto2
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkTextMovementBetweenSegments-12    	    3013	    395957 ns/op
 BenchmarkGrowth_MultiSegment-12            	     100	  12238095 ns/op	  85.68 MB/s	 1648639 B/op	      21 allocs/op
 shortname: uber_zap
 goos: linux
 goarch: amd64
-pkg: go.uber.org/zap/zapcore
+my_stats: go.uber.org/zap/zapcore
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBufferedWriteSyncer/write_file_with_buffer-12         	 4878606	       234.2 ns/op
 BenchmarkMultiWriteSyncer/2_discarder-12                       	100000000	        12.20 ns/op
@@ -1315,7 +1315,7 @@ BenchmarkTeeCheck-12                                           	 6121774	       
 shortname: uber_tally
 goos: linux
 goarch: amd64
-pkg: github.com/uber-go/tally
+my_stats: github.com/uber-go/tally
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBucketsEqual/same_20_values-12     	77598853	        15.64 ns/op
 BenchmarkBucketsEqual/same_20_durations-12  	75769682	        16.17 ns/op
@@ -1324,40 +1324,40 @@ BenchmarkHistogramAllocation-12             	  882793	      1715 ns/op	    1205 
 shortname: bindata
 goos: linux
 goarch: amd64
-pkg: github.com/kevinburke/go-bindata
+my_stats: github.com/kevinburke/go-bindata
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBindata-12         	       4	 256916750 ns/op	  26.72 MB/s	173472830 B/op	    6974 allocs/op
 shortname: cespare_mph
 goos: linux
 goarch: amd64
-pkg: github.com/cespare/mph
+my_stats: github.com/cespare/mph
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBuild-12    	      57	  22270986 ns/op
 shortname: cespare_xxhash
 shortname: gtank_blake2s
 goos: linux
 goarch: amd64
-pkg: github.com/gtank/blake2s
+my_stats: github.com/gtank/blake2s
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHash8K-12    	   51958	     23117 ns/op	 354.38 MB/s
 shortname: nelsam_gxui_interval
 goos: linux
 goarch: amd64
-pkg: git.sr.ht/~nelsam/gxui/interval
+my_stats: git.sr.ht/~nelsam/gxui/interval
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGeneral-12    	 3492760	       344.3 ns/op
 shortname: ajstarks_deck_generate
 shortname: benhoyt_goawk
 goos: linux
 goarch: amd64
-pkg: github.com/benhoyt/goawk/interp
+my_stats: github.com/benhoyt/goawk/interp
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRecursiveFunc-12    	   77029	     16769 ns/op
 BenchmarkRegexMatch-12       	  952966	      1251 ns/op
 shortname: ericlagergren_decimal
 goos: linux
 goarch: amd64
-pkg: github.com/ericlagergren/decimal/benchmarks
+my_stats: github.com/ericlagergren/decimal/benchmarks
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkPi/foo=ericlagergren_(Go)/prec=100-12         	    8540	    143549 ns/op
 BenchmarkPi/foo=ericlagergren_(GDA)/prec=100-12        	    4098	    299559 ns/op
@@ -1368,7 +1368,7 @@ BenchmarkPi/foo=float64/prec=100-12                    	  199147	      6023 ns/o
 shortname: dustin_broadcast
 goos: linux
 goarch: amd64
-pkg: github.com/dustin/go-broadcast
+my_stats: github.com/dustin/go-broadcast
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDirectSend-12            	 3295222	       365.5 ns/op
 BenchmarkParallelDirectSend-12    	 3162608	       376.9 ns/op
@@ -1377,21 +1377,21 @@ BenchmarkMuxBrodcast-12           	 2209310	       531.6 ns/op
 shortname: dustin_humanize
 goos: linux
 goarch: amd64
-pkg: github.com/dustin/go-humanize
+my_stats: github.com/dustin/go-humanize
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkParseBigBytes-12        	  744571	      1582 ns/op
 BenchmarkFtoaRegexTrailing-12    	  597289	      2129 ns/op
 shortname: bloom_bloom
 goos: linux
 goarch: amd64
-pkg: github.com/bits-and-blooms/bloom/v3
+my_stats: github.com/bits-and-blooms/bloom/v3
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkSeparateTestAndAdd-12    	 3376434	       360.0 ns/op
 BenchmarkCombinedTestAndAdd-12    	 3030445	       400.9 ns/op
 shortname: kanzi
 goos: linux
 goarch: amd64
-pkg: github.com/flanglet/kanzi-go/benchmark
+my_stats: github.com/flanglet/kanzi-go/benchmark
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBWTS-12    	1000000000	         0.6153 ns/op
 BenchmarkFPAQ-12    	      67	  17825619 ns/op
@@ -1400,7 +1400,7 @@ BenchmarkMTFT-12    	    1165	   1013088 ns/op
 shortname: commonmark_markdown
 goos: linux
 goarch: amd64
-pkg: gitlab.com/golang-commonmark/markdown
+my_stats: gitlab.com/golang-commonmark/markdown
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRenderSpecNoHTML-12          	     223	   5373501 ns/op
 BenchmarkRenderSpec-12                	     222	   5392609 ns/op
@@ -1408,13 +1408,13 @@ BenchmarkRenderSpecBlackFriday2-12    	     334	   3601981 ns/op
 shortname: klauspost
 goos: linux
 goarch: amd64
-pkg: github.com/dr2chase/benchmarks/klauspost
+my_stats: github.com/dr2chase/benchmarks/klauspost
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 Benchmark_tokens_EstimatedBits-12    	 1547265	       773.7 ns/op	   1.29 MB/s
 shortname: minio
 goos: linux
 goarch: amd64
-pkg: github.com/minio/minio/cmd
+my_stats: github.com/minio/minio/cmd
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDecodehealingTracker-12            	 1785546	       666.4 ns/op	 466.66 MB/s	       0 B/op	       0 allocs/op
 BenchmarkAppendMsgReplicateDecision-12      	1000000000	         0.5742 ns/op	1741.57 MB/s	       0 B/op	       0 allocs/op
@@ -1424,7 +1424,7 @@ BenchmarkMarshalMsgdataUsageCacheInfo-12    	17279304	        68.95 ns/op	      
 shortname: hugo_hugolib
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/hugolib
+my_stats: github.com/gohugoio/hugo/hugolib
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGetPage-12                     	 4945545	       242.3 ns/op
 BenchmarkMergeByLanguage-12             	 1985650	       582.9 ns/op
@@ -1433,7 +1433,7 @@ BenchmarkReplaceShortcodeTokens-12      	  502921	      3015 ns/op
 shortname: ethereum_core
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core
+my_stats: github.com/ethereum/go-ethereum/core
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkPendingDemotion10000-12         	 8833689	       135.8 ns/op
 BenchmarkFuturePromotion10000-12         	464801222	         2.588 ns/op
@@ -1442,7 +1442,7 @@ BenchmarkPoolBatchLocalInsert10000-12    	       2	1029628305 ns/op
 shortname: shopify_sarama
 goos: linux
 goarch: amd64
-pkg: github.com/Shopify/sarama
+my_stats: github.com/Shopify/sarama
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBroker_Open-12               	    7312	    178771 ns/op
 BenchmarkBroker_No_Metrics_Open-12    	    9304	    131801 ns/op
@@ -1452,20 +1452,20 @@ shortname: aws_jsonrpc
 shortname: aws_jsonutil
 goos: linux
 goarch: amd64
-pkg: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
+my_stats: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBuildJSON-12     	  275334	      4187 ns/op
 BenchmarkStdlibJSON-12    	  298051	      4081 ns/op
 shortname: tidwall_tile38
 goos: linux
 goarch: amd64
-pkg: github.com/tidwall/tile38/tests
+my_stats: github.com/tidwall/tile38/tests
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkAll/search/KNN-12     	    3702	    366609 ns/op
 shortname: ethereum_bitutil
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/common/bitutil
+my_stats: github.com/ethereum/go-ethereum/common/bitutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkFastTest2KB-12              	 8888704	       133.9 ns/op
 BenchmarkBaseTest2KB-12              	 1597225	       751.8 ns/op
@@ -1474,13 +1474,13 @@ shortname: ethereum_storage
 shortname: ethereum_ethash
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/consensus/ethash
+my_stats: github.com/ethereum/go-ethereum/consensus/ethash
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashimotoLight-12    	     997	   1194660 ns/op
 shortname: ethereum_ecies
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/crypto/ecies
+my_stats: github.com/ethereum/go-ethereum/crypto/ecies
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGenerateKeyP256-12     	   63645	     18379 ns/op
 BenchmarkGenSharedKeyP256-12    	   16458	     71674 ns/op
@@ -1488,54 +1488,54 @@ BenchmarkGenSharedKeyS256-12    	   18290	     65456 ns/op
 shortname: ethereum_corevm
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core/vm
+my_stats: github.com/ethereum/go-ethereum/core/vm
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkOpDiv128-12    	10965853	       110.1 ns/op
 shortname: ethereum_trie
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/trie
+my_stats: github.com/ethereum/go-ethereum/trie
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashFixedSize/10K-12           	     180	   6543645 ns/op	 6328652 B/op	   77156 allocs/op
 BenchmarkCommitAfterHashFixedSize/10K-12         	      93	  13104938 ns/op	 9044630 B/op	   79990 allocs/op
 shortname: spexs2
 goos: linux
 goarch: amd64
-pkg: github.com/egonelbre/spexs2/_benchmark
+my_stats: github.com/egonelbre/spexs2/_benchmark
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRun/10k/1-12       	       1	24241754234 ns/op
 BenchmarkRun/10k/16-12      	       1	5306304164 ns/op
 shortname: gonum_blas_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/blas/gonum
+my_stats: gonum.org/v1/gonum/blas/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDnrm2MediumPosInc-12        	  297013	      4020 ns/op
 BenchmarkDasumMediumUnitaryInc-12    	 1403428	       853.7 ns/op
 shortname: gonum_lapack_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/lapack/gonum
+my_stats: gonum.org/v1/gonum/lapack/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDgeev/Circulant10-12         	   27712	     43269 ns/op
 BenchmarkDgeev/Circulant100-12        	      68	  16535406 ns/op
 shortname: gonum_mat
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/mat
+my_stats: gonum.org/v1/gonum/mat
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkMulWorkspaceDense1000Hundredth-12    	     100	 123846094 ns/op
 BenchmarkScaleVec10000Inc20-12                	   50522	     22921 ns/op
 shortname: semver
 goos: linux
 goarch: amd64
-pkg: github.com/Masterminds/semver
+my_stats: github.com/Masterminds/semver
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkValidateVersionTildeFail-12    	 1794913	       669.6 ns/op
 shortname: hugo_helpers
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/helpers
+my_stats: github.com/gohugoio/hugo/helpers
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkStripHTML-12                           	  390487	      3006 ns/op
 BenchmarkTestTruncateWordsToWholeSentence-12    	16542777	        72.32 ns/op
@@ -1543,14 +1543,14 @@ BenchmarkEmojiKyokomiSprint-12                  	   32104	     37486 ns/op
 shortname: k8s_cache
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/tools/cache
+my_stats: k8s.io/client-go/tools/cache
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkListener-12                   	 1403828	       895.8 ns/op	      39 B/op	       1 allocs/op
 BenchmarkReflectorResyncChanMany-12    	 3337435	       357.1 ns/op
 shortname: k8s_workqueue
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/util/workqueue
+my_stats: k8s.io/client-go/util/workqueue
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:1-12         	    3685	    311555 ns/op
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:10-12        	   22656	     53256 ns/op
@@ -1559,7 +1559,7 @@ BenchmarkParallelizeUntil/pieces:999,workers:10,chunkSize:13-12         	   2479
 shortname: gonum_topo
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/topo
+my_stats: gonum.org/v1/gonum/graph/topo
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkTarjanSCCGnp_10_tenth-12     	  140611	      8502 ns/op
 BenchmarkTarjanSCCGnp_1000_half-12    	      13	  89294949 ns/op
@@ -1567,27 +1567,27 @@ shortname: gonum_path
 shortname: gonum_community
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/community
+my_stats: gonum.org/v1/gonum/graph/community
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkLouvainDirectedMultiplex-12    	      62	  18899451 ns/op
 shortname: gonum_traverse
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/traverse
+my_stats: gonum.org/v1/gonum/graph/traverse
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkWalkAllBreadthFirstGnp_10_tenth-12      	  307192	      4153 ns/op
 BenchmarkWalkAllBreadthFirstGnp_1000_tenth-12    	      91	  12776921 ns/op
 shortname: capnproto2
 goos: linux
 goarch: amd64
-pkg: zombiezen.com/go/capnproto2
+my_stats: zombiezen.com/go/capnproto2
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkTextMovementBetweenSegments-12    	    3002	    395562 ns/op
 BenchmarkGrowth_MultiSegment-12            	     100	  12055096 ns/op	  86.98 MB/s	 1648619 B/op	      21 allocs/op
 shortname: uber_zap
 goos: linux
 goarch: amd64
-pkg: go.uber.org/zap/zapcore
+my_stats: go.uber.org/zap/zapcore
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBufferedWriteSyncer/write_file_with_buffer-12         	 4206488	       264.5 ns/op
 BenchmarkMultiWriteSyncer/2_discarder-12                       	124552764	         9.797 ns/op
@@ -1608,7 +1608,7 @@ BenchmarkTeeCheck-12                                           	 6833859	       
 shortname: uber_tally
 goos: linux
 goarch: amd64
-pkg: github.com/uber-go/tally
+my_stats: github.com/uber-go/tally
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBucketsEqual/same_20_values-12     	78017923	        15.29 ns/op
 BenchmarkBucketsEqual/same_20_durations-12  	75590689	        15.82 ns/op
@@ -1617,40 +1617,40 @@ BenchmarkHistogramAllocation-12             	  891314	      1670 ns/op	    1203 
 shortname: bindata
 goos: linux
 goarch: amd64
-pkg: github.com/kevinburke/go-bindata
+my_stats: github.com/kevinburke/go-bindata
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBindata-12         	       4	 251439151 ns/op	  27.30 MB/s	173472736 B/op	    6974 allocs/op
 shortname: cespare_mph
 goos: linux
 goarch: amd64
-pkg: github.com/cespare/mph
+my_stats: github.com/cespare/mph
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBuild-12    	      56	  20938709 ns/op
 shortname: cespare_xxhash
 shortname: gtank_blake2s
 goos: linux
 goarch: amd64
-pkg: github.com/gtank/blake2s
+my_stats: github.com/gtank/blake2s
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHash8K-12    	   51717	     23261 ns/op	 352.17 MB/s
 shortname: nelsam_gxui_interval
 goos: linux
 goarch: amd64
-pkg: git.sr.ht/~nelsam/gxui/interval
+my_stats: git.sr.ht/~nelsam/gxui/interval
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGeneral-12    	 3488565	       344.6 ns/op
 shortname: ajstarks_deck_generate
 shortname: benhoyt_goawk
 goos: linux
 goarch: amd64
-pkg: github.com/benhoyt/goawk/interp
+my_stats: github.com/benhoyt/goawk/interp
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRecursiveFunc-12    	   76981	     15552 ns/op
 BenchmarkRegexMatch-12       	  945835	      1255 ns/op
 shortname: ericlagergren_decimal
 goos: linux
 goarch: amd64
-pkg: github.com/ericlagergren/decimal/benchmarks
+my_stats: github.com/ericlagergren/decimal/benchmarks
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkPi/foo=ericlagergren_(Go)/prec=100-12         	    8443	    136080 ns/op
 BenchmarkPi/foo=ericlagergren_(GDA)/prec=100-12        	    4209	    288390 ns/op
@@ -1661,7 +1661,7 @@ BenchmarkPi/foo=float64/prec=100-12                    	  198358	      6017 ns/o
 shortname: dustin_broadcast
 goos: linux
 goarch: amd64
-pkg: github.com/dustin/go-broadcast
+my_stats: github.com/dustin/go-broadcast
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDirectSend-12            	 3213457	       370.9 ns/op
 BenchmarkParallelDirectSend-12    	 3128488	       383.0 ns/op
@@ -1670,21 +1670,21 @@ BenchmarkMuxBrodcast-12           	 2155438	       538.3 ns/op
 shortname: dustin_humanize
 goos: linux
 goarch: amd64
-pkg: github.com/dustin/go-humanize
+my_stats: github.com/dustin/go-humanize
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkParseBigBytes-12        	  725878	      1498 ns/op
 BenchmarkFtoaRegexTrailing-12    	  600525	      2023 ns/op
 shortname: bloom_bloom
 goos: linux
 goarch: amd64
-pkg: github.com/bits-and-blooms/bloom/v3
+my_stats: github.com/bits-and-blooms/bloom/v3
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkSeparateTestAndAdd-12    	 3371791	       359.0 ns/op
 BenchmarkCombinedTestAndAdd-12    	 3023985	       393.4 ns/op
 shortname: kanzi
 goos: linux
 goarch: amd64
-pkg: github.com/flanglet/kanzi-go/benchmark
+my_stats: github.com/flanglet/kanzi-go/benchmark
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBWTS-12    	1000000000	         0.6128 ns/op
 BenchmarkFPAQ-12    	      67	  17693466 ns/op
@@ -1693,7 +1693,7 @@ BenchmarkMTFT-12    	    1173	   1011699 ns/op
 shortname: commonmark_markdown
 goos: linux
 goarch: amd64
-pkg: gitlab.com/golang-commonmark/markdown
+my_stats: gitlab.com/golang-commonmark/markdown
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRenderSpecNoHTML-12          	     219	   5415192 ns/op
 BenchmarkRenderSpec-12                	     223	   5420975 ns/op
@@ -1701,13 +1701,13 @@ BenchmarkRenderSpecBlackFriday2-12    	     334	   3586958 ns/op
 shortname: klauspost
 goos: linux
 goarch: amd64
-pkg: github.com/dr2chase/benchmarks/klauspost
+my_stats: github.com/dr2chase/benchmarks/klauspost
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 Benchmark_tokens_EstimatedBits-12    	 1542100	       776.1 ns/op	   1.29 MB/s
 shortname: minio
 goos: linux
 goarch: amd64
-pkg: github.com/minio/minio/cmd
+my_stats: github.com/minio/minio/cmd
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDecodehealingTracker-12            	 1800002	       673.1 ns/op	 462.01 MB/s	       0 B/op	       0 allocs/op
 BenchmarkAppendMsgReplicateDecision-12      	1000000000	         0.5747 ns/op	1740.18 MB/s	       0 B/op	       0 allocs/op
@@ -1717,7 +1717,7 @@ BenchmarkMarshalMsgdataUsageCacheInfo-12    	16427902	        70.08 ns/op	      
 shortname: hugo_hugolib
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/hugolib
+my_stats: github.com/gohugoio/hugo/hugolib
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGetPage-12                     	 4960857	       242.5 ns/op
 BenchmarkMergeByLanguage-12             	 1963960	       587.5 ns/op
@@ -1726,7 +1726,7 @@ BenchmarkReplaceShortcodeTokens-12      	  509125	      3042 ns/op
 shortname: ethereum_core
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core
+my_stats: github.com/ethereum/go-ethereum/core
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkPendingDemotion10000-12         	 8803395	       135.9 ns/op
 BenchmarkFuturePromotion10000-12         	463377447	         2.584 ns/op
@@ -1735,7 +1735,7 @@ BenchmarkPoolBatchLocalInsert10000-12    	       2	1027054364 ns/op
 shortname: shopify_sarama
 goos: linux
 goarch: amd64
-pkg: github.com/Shopify/sarama
+my_stats: github.com/Shopify/sarama
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBroker_Open-12               	    7045	    180279 ns/op
 BenchmarkBroker_No_Metrics_Open-12    	    8510	    131471 ns/op
@@ -1745,20 +1745,20 @@ shortname: aws_jsonrpc
 shortname: aws_jsonutil
 goos: linux
 goarch: amd64
-pkg: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
+my_stats: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBuildJSON-12     	  277303	      4249 ns/op
 BenchmarkStdlibJSON-12    	  299215	      4072 ns/op
 shortname: tidwall_tile38
 goos: linux
 goarch: amd64
-pkg: github.com/tidwall/tile38/tests
+my_stats: github.com/tidwall/tile38/tests
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkAll/search/KNN-12     	    3691	    365854 ns/op
 shortname: ethereum_bitutil
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/common/bitutil
+my_stats: github.com/ethereum/go-ethereum/common/bitutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkFastTest2KB-12              	 8934051	       133.5 ns/op
 BenchmarkBaseTest2KB-12              	 1593493	       752.9 ns/op
@@ -1767,13 +1767,13 @@ shortname: ethereum_storage
 shortname: ethereum_ethash
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/consensus/ethash
+my_stats: github.com/ethereum/go-ethereum/consensus/ethash
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashimotoLight-12    	     996	   1184029 ns/op
 shortname: ethereum_ecies
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/crypto/ecies
+my_stats: github.com/ethereum/go-ethereum/crypto/ecies
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGenerateKeyP256-12     	   65070	     18473 ns/op
 BenchmarkGenSharedKeyP256-12    	   16747	     73381 ns/op
@@ -1781,54 +1781,54 @@ BenchmarkGenSharedKeyS256-12    	   18339	     66281 ns/op
 shortname: ethereum_corevm
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core/vm
+my_stats: github.com/ethereum/go-ethereum/core/vm
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkOpDiv128-12    	10960586	       108.6 ns/op
 shortname: ethereum_trie
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/trie
+my_stats: github.com/ethereum/go-ethereum/trie
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashFixedSize/10K-12           	     181	   6643258 ns/op	 6329004 B/op	   77157 allocs/op
 BenchmarkCommitAfterHashFixedSize/10K-12         	      90	  13120290 ns/op	 9045679 B/op	   79993 allocs/op
 shortname: spexs2
 goos: linux
 goarch: amd64
-pkg: github.com/egonelbre/spexs2/_benchmark
+my_stats: github.com/egonelbre/spexs2/_benchmark
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRun/10k/1-12       	       1	24068286180 ns/op
 BenchmarkRun/10k/16-12      	       1	5117146456 ns/op
 shortname: gonum_blas_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/blas/gonum
+my_stats: gonum.org/v1/gonum/blas/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDnrm2MediumPosInc-12        	  297069	      4022 ns/op
 BenchmarkDasumMediumUnitaryInc-12    	 1405395	       853.9 ns/op
 shortname: gonum_lapack_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/lapack/gonum
+my_stats: gonum.org/v1/gonum/lapack/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDgeev/Circulant10-12         	   27661	     43545 ns/op
 BenchmarkDgeev/Circulant100-12        	      72	  16525101 ns/op
 shortname: gonum_mat
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/mat
+my_stats: gonum.org/v1/gonum/mat
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkMulWorkspaceDense1000Hundredth-12    	     100	 123830775 ns/op
 BenchmarkScaleVec10000Inc20-12                	   51094	     23127 ns/op
 shortname: semver
 goos: linux
 goarch: amd64
-pkg: github.com/Masterminds/semver
+my_stats: github.com/Masterminds/semver
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkValidateVersionTildeFail-12    	 1795044	       676.4 ns/op
 shortname: hugo_helpers
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/helpers
+my_stats: github.com/gohugoio/hugo/helpers
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkStripHTML-12                           	  394808	      3015 ns/op
 BenchmarkTestTruncateWordsToWholeSentence-12    	16488058	        72.35 ns/op
@@ -1836,14 +1836,14 @@ BenchmarkEmojiKyokomiSprint-12                  	   32067	     38754 ns/op
 shortname: k8s_cache
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/tools/cache
+my_stats: k8s.io/client-go/tools/cache
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkListener-12                   	 1437854	       856.5 ns/op	      39 B/op	       1 allocs/op
 BenchmarkReflectorResyncChanMany-12    	 3352326	       354.1 ns/op
 shortname: k8s_workqueue
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/util/workqueue
+my_stats: k8s.io/client-go/util/workqueue
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:1-12         	    3843	    311994 ns/op
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:10-12        	   22754	     53163 ns/op
@@ -1852,7 +1852,7 @@ BenchmarkParallelizeUntil/pieces:999,workers:10,chunkSize:13-12         	   2492
 shortname: gonum_topo
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/topo
+my_stats: gonum.org/v1/gonum/graph/topo
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkTarjanSCCGnp_10_tenth-12     	  144195	      8679 ns/op
 BenchmarkTarjanSCCGnp_1000_half-12    	      13	  89416380 ns/op
@@ -1860,27 +1860,27 @@ shortname: gonum_path
 shortname: gonum_community
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/community
+my_stats: gonum.org/v1/gonum/graph/community
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkLouvainDirectedMultiplex-12    	      62	  18986039 ns/op
 shortname: gonum_traverse
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/traverse
+my_stats: gonum.org/v1/gonum/graph/traverse
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkWalkAllBreadthFirstGnp_10_tenth-12      	  310431	      4116 ns/op
 BenchmarkWalkAllBreadthFirstGnp_1000_tenth-12    	      92	  12770114 ns/op
 shortname: capnproto2
 goos: linux
 goarch: amd64
-pkg: zombiezen.com/go/capnproto2
+my_stats: zombiezen.com/go/capnproto2
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkTextMovementBetweenSegments-12    	    3010	    396643 ns/op
 BenchmarkGrowth_MultiSegment-12            	     100	  11809441 ns/op	  88.79 MB/s	 1648640 B/op	      21 allocs/op
 shortname: uber_zap
 goos: linux
 goarch: amd64
-pkg: go.uber.org/zap/zapcore
+my_stats: go.uber.org/zap/zapcore
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBufferedWriteSyncer/write_file_with_buffer-12         	 4361012	       264.6 ns/op
 BenchmarkMultiWriteSyncer/2_discarder-12                       	122799422	         9.658 ns/op
@@ -1901,7 +1901,7 @@ BenchmarkTeeCheck-12                                           	 7081172	       
 shortname: uber_tally
 goos: linux
 goarch: amd64
-pkg: github.com/uber-go/tally
+my_stats: github.com/uber-go/tally
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBucketsEqual/same_20_values-12     	76661900	        15.25 ns/op
 BenchmarkBucketsEqual/same_20_durations-12  	75747643	        15.83 ns/op
@@ -1910,40 +1910,40 @@ BenchmarkHistogramAllocation-12             	  900403	      1687 ns/op	    1201 
 shortname: bindata
 goos: linux
 goarch: amd64
-pkg: github.com/kevinburke/go-bindata
+my_stats: github.com/kevinburke/go-bindata
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBindata-12         	       4	 253448686 ns/op	  27.09 MB/s	173473704 B/op	    6975 allocs/op
 shortname: cespare_mph
 goos: linux
 goarch: amd64
-pkg: github.com/cespare/mph
+my_stats: github.com/cespare/mph
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBuild-12    	      55	  21108080 ns/op
 shortname: cespare_xxhash
 shortname: gtank_blake2s
 goos: linux
 goarch: amd64
-pkg: github.com/gtank/blake2s
+my_stats: github.com/gtank/blake2s
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHash8K-12    	   51943	     23049 ns/op	 355.42 MB/s
 shortname: nelsam_gxui_interval
 goos: linux
 goarch: amd64
-pkg: git.sr.ht/~nelsam/gxui/interval
+my_stats: git.sr.ht/~nelsam/gxui/interval
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGeneral-12    	 3495903	       344.5 ns/op
 shortname: ajstarks_deck_generate
 shortname: benhoyt_goawk
 goos: linux
 goarch: amd64
-pkg: github.com/benhoyt/goawk/interp
+my_stats: github.com/benhoyt/goawk/interp
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRecursiveFunc-12    	   77049	     15470 ns/op
 BenchmarkRegexMatch-12       	  954483	      1268 ns/op
 shortname: ericlagergren_decimal
 goos: linux
 goarch: amd64
-pkg: github.com/ericlagergren/decimal/benchmarks
+my_stats: github.com/ericlagergren/decimal/benchmarks
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkPi/foo=ericlagergren_(Go)/prec=100-12         	    8335	    136315 ns/op
 BenchmarkPi/foo=ericlagergren_(GDA)/prec=100-12        	    4218	    285591 ns/op
@@ -1954,7 +1954,7 @@ BenchmarkPi/foo=float64/prec=100-12                    	  195208	      6067 ns/o
 shortname: dustin_broadcast
 goos: linux
 goarch: amd64
-pkg: github.com/dustin/go-broadcast
+my_stats: github.com/dustin/go-broadcast
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDirectSend-12            	 3281282	       368.4 ns/op
 BenchmarkParallelDirectSend-12    	 3207511	       374.9 ns/op
@@ -1963,21 +1963,21 @@ BenchmarkMuxBrodcast-12           	 2294640	       551.5 ns/op
 shortname: dustin_humanize
 goos: linux
 goarch: amd64
-pkg: github.com/dustin/go-humanize
+my_stats: github.com/dustin/go-humanize
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkParseBigBytes-12        	  738758	      1478 ns/op
 BenchmarkFtoaRegexTrailing-12    	  603010	      2005 ns/op
 shortname: bloom_bloom
 goos: linux
 goarch: amd64
-pkg: github.com/bits-and-blooms/bloom/v3
+my_stats: github.com/bits-and-blooms/bloom/v3
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkSeparateTestAndAdd-12    	 3357159	       362.1 ns/op
 BenchmarkCombinedTestAndAdd-12    	 3022236	       394.5 ns/op
 shortname: kanzi
 goos: linux
 goarch: amd64
-pkg: github.com/flanglet/kanzi-go/benchmark
+my_stats: github.com/flanglet/kanzi-go/benchmark
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBWTS-12    	1000000000	         0.6112 ns/op
 BenchmarkFPAQ-12    	      67	  17797916 ns/op
@@ -1986,7 +1986,7 @@ BenchmarkMTFT-12    	    1168	   1012646 ns/op
 shortname: commonmark_markdown
 goos: linux
 goarch: amd64
-pkg: gitlab.com/golang-commonmark/markdown
+my_stats: gitlab.com/golang-commonmark/markdown
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRenderSpecNoHTML-12          	     222	   5367337 ns/op
 BenchmarkRenderSpec-12                	     219	   5369282 ns/op
@@ -1994,13 +1994,13 @@ BenchmarkRenderSpecBlackFriday2-12    	     334	   3600953 ns/op
 shortname: klauspost
 goos: linux
 goarch: amd64
-pkg: github.com/dr2chase/benchmarks/klauspost
+my_stats: github.com/dr2chase/benchmarks/klauspost
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 Benchmark_tokens_EstimatedBits-12    	 1550023	       774.4 ns/op	   1.29 MB/s
 shortname: minio
 goos: linux
 goarch: amd64
-pkg: github.com/minio/minio/cmd
+my_stats: github.com/minio/minio/cmd
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDecodehealingTracker-12            	 1783537	       667.6 ns/op	 465.87 MB/s	       0 B/op	       0 allocs/op
 BenchmarkAppendMsgReplicateDecision-12      	1000000000	         0.5747 ns/op	1740.07 MB/s	       0 B/op	       0 allocs/op
@@ -2010,7 +2010,7 @@ BenchmarkMarshalMsgdataUsageCacheInfo-12    	16534610	        69.56 ns/op	      
 shortname: hugo_hugolib
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/hugolib
+my_stats: github.com/gohugoio/hugo/hugolib
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGetPage-12                     	 4943707	       242.1 ns/op
 BenchmarkMergeByLanguage-12             	 1953567	       585.2 ns/op
@@ -2019,7 +2019,7 @@ BenchmarkReplaceShortcodeTokens-12      	  494956	      2707 ns/op
 shortname: ethereum_core
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core
+my_stats: github.com/ethereum/go-ethereum/core
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkPendingDemotion10000-12         	 8634645	       135.7 ns/op
 BenchmarkFuturePromotion10000-12         	463797506	         2.605 ns/op
@@ -2028,7 +2028,7 @@ BenchmarkPoolBatchLocalInsert10000-12    	       2	1038241928 ns/op
 shortname: shopify_sarama
 goos: linux
 goarch: amd64
-pkg: github.com/Shopify/sarama
+my_stats: github.com/Shopify/sarama
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBroker_Open-12               	    7240	    178050 ns/op
 BenchmarkBroker_No_Metrics_Open-12    	    9492	    131374 ns/op
@@ -2038,20 +2038,20 @@ shortname: aws_jsonrpc
 shortname: aws_jsonutil
 goos: linux
 goarch: amd64
-pkg: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
+my_stats: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBuildJSON-12     	  277130	      4272 ns/op
 BenchmarkStdlibJSON-12    	  296499	      4072 ns/op
 shortname: tidwall_tile38
 goos: linux
 goarch: amd64
-pkg: github.com/tidwall/tile38/tests
+my_stats: github.com/tidwall/tile38/tests
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkAll/search/KNN-12     	    3687	    362749 ns/op
 shortname: ethereum_bitutil
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/common/bitutil
+my_stats: github.com/ethereum/go-ethereum/common/bitutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkFastTest2KB-12              	 8969784	       136.4 ns/op
 BenchmarkBaseTest2KB-12              	 1593099	       752.7 ns/op
@@ -2060,13 +2060,13 @@ shortname: ethereum_storage
 shortname: ethereum_ethash
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/consensus/ethash
+my_stats: github.com/ethereum/go-ethereum/consensus/ethash
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashimotoLight-12    	     996	   1192340 ns/op
 shortname: ethereum_ecies
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/crypto/ecies
+my_stats: github.com/ethereum/go-ethereum/crypto/ecies
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGenerateKeyP256-12     	   64986	     18394 ns/op
 BenchmarkGenSharedKeyP256-12    	   16672	     71755 ns/op
@@ -2074,54 +2074,54 @@ BenchmarkGenSharedKeyS256-12    	   18357	     66021 ns/op
 shortname: ethereum_corevm
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core/vm
+my_stats: github.com/ethereum/go-ethereum/core/vm
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkOpDiv128-12    	10809906	       108.3 ns/op
 shortname: ethereum_trie
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/trie
+my_stats: github.com/ethereum/go-ethereum/trie
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashFixedSize/10K-12           	     178	   6628012 ns/op	 6328725 B/op	   77156 allocs/op
 BenchmarkCommitAfterHashFixedSize/10K-12         	      86	  13287604 ns/op	 9044341 B/op	   79989 allocs/op
 shortname: spexs2
 goos: linux
 goarch: amd64
-pkg: github.com/egonelbre/spexs2/_benchmark
+my_stats: github.com/egonelbre/spexs2/_benchmark
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRun/10k/1-12       	       1	24067744050 ns/op
 BenchmarkRun/10k/16-12      	       1	5276974879 ns/op
 shortname: gonum_blas_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/blas/gonum
+my_stats: gonum.org/v1/gonum/blas/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDnrm2MediumPosInc-12        	  295824	      4021 ns/op
 BenchmarkDasumMediumUnitaryInc-12    	 1405226	       860.9 ns/op
 shortname: gonum_lapack_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/lapack/gonum
+my_stats: gonum.org/v1/gonum/lapack/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDgeev/Circulant10-12         	   27586	     43845 ns/op
 BenchmarkDgeev/Circulant100-12        	      72	  16528150 ns/op
 shortname: gonum_mat
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/mat
+my_stats: gonum.org/v1/gonum/mat
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkMulWorkspaceDense1000Hundredth-12    	     100	 123794834 ns/op
 BenchmarkScaleVec10000Inc20-12                	   50908	     23161 ns/op
 shortname: semver
 goos: linux
 goarch: amd64
-pkg: github.com/Masterminds/semver
+my_stats: github.com/Masterminds/semver
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkValidateVersionTildeFail-12    	 1786237	       669.0 ns/op
 shortname: hugo_helpers
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/helpers
+my_stats: github.com/gohugoio/hugo/helpers
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkStripHTML-12                           	  388687	      3015 ns/op
 BenchmarkTestTruncateWordsToWholeSentence-12    	16426107	        72.39 ns/op
@@ -2129,14 +2129,14 @@ BenchmarkEmojiKyokomiSprint-12                  	   32080	     37973 ns/op
 shortname: k8s_cache
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/tools/cache
+my_stats: k8s.io/client-go/tools/cache
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkListener-12                   	 1430413	       884.1 ns/op	      39 B/op	       1 allocs/op
 BenchmarkReflectorResyncChanMany-12    	 3336484	       361.8 ns/op
 shortname: k8s_workqueue
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/util/workqueue
+my_stats: k8s.io/client-go/util/workqueue
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:1-12         	    3796	    311045 ns/op
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:10-12        	   22791	     53215 ns/op
@@ -2145,7 +2145,7 @@ BenchmarkParallelizeUntil/pieces:999,workers:10,chunkSize:13-12         	   2466
 shortname: gonum_topo
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/topo
+my_stats: gonum.org/v1/gonum/graph/topo
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkTarjanSCCGnp_10_tenth-12     	  143432	      8516 ns/op
 BenchmarkTarjanSCCGnp_1000_half-12    	      13	  89054143 ns/op
@@ -2153,27 +2153,27 @@ shortname: gonum_path
 shortname: gonum_community
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/community
+my_stats: gonum.org/v1/gonum/graph/community
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkLouvainDirectedMultiplex-12    	      62	  18860100 ns/op
 shortname: gonum_traverse
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/traverse
+my_stats: gonum.org/v1/gonum/graph/traverse
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkWalkAllBreadthFirstGnp_10_tenth-12      	  310080	      4119 ns/op
 BenchmarkWalkAllBreadthFirstGnp_1000_tenth-12    	      91	  12718135 ns/op
 shortname: capnproto2
 goos: linux
 goarch: amd64
-pkg: zombiezen.com/go/capnproto2
+my_stats: zombiezen.com/go/capnproto2
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkTextMovementBetweenSegments-12    	    3010	    396032 ns/op
 BenchmarkGrowth_MultiSegment-12            	     100	  11811340 ns/op	  88.78 MB/s	 1648638 B/op	      21 allocs/op
 shortname: uber_zap
 goos: linux
 goarch: amd64
-pkg: go.uber.org/zap/zapcore
+my_stats: go.uber.org/zap/zapcore
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBufferedWriteSyncer/write_file_with_buffer-12         	 4530549	       276.0 ns/op
 BenchmarkMultiWriteSyncer/2_discarder-12                       	124282294	         9.829 ns/op
@@ -2194,7 +2194,7 @@ BenchmarkTeeCheck-12                                           	 6957498	       
 shortname: uber_tally
 goos: linux
 goarch: amd64
-pkg: github.com/uber-go/tally
+my_stats: github.com/uber-go/tally
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBucketsEqual/same_20_values-12     	77406235	        15.27 ns/op
 BenchmarkBucketsEqual/same_20_durations-12  	74548820	        15.81 ns/op
@@ -2203,40 +2203,40 @@ BenchmarkHistogramAllocation-12             	  859707	      1619 ns/op	    1210 
 shortname: bindata
 goos: linux
 goarch: amd64
-pkg: github.com/kevinburke/go-bindata
+my_stats: github.com/kevinburke/go-bindata
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBindata-12         	       4	 255097352 ns/op	  26.91 MB/s	173472662 B/op	    6971 allocs/op
 shortname: cespare_mph
 goos: linux
 goarch: amd64
-pkg: github.com/cespare/mph
+my_stats: github.com/cespare/mph
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBuild-12    	      57	  20680997 ns/op
 shortname: cespare_xxhash
 shortname: gtank_blake2s
 goos: linux
 goarch: amd64
-pkg: github.com/gtank/blake2s
+my_stats: github.com/gtank/blake2s
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHash8K-12    	   51886	     23061 ns/op	 355.23 MB/s
 shortname: nelsam_gxui_interval
 goos: linux
 goarch: amd64
-pkg: git.sr.ht/~nelsam/gxui/interval
+my_stats: git.sr.ht/~nelsam/gxui/interval
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGeneral-12    	 3485742	       344.2 ns/op
 shortname: ajstarks_deck_generate
 shortname: benhoyt_goawk
 goos: linux
 goarch: amd64
-pkg: github.com/benhoyt/goawk/interp
+my_stats: github.com/benhoyt/goawk/interp
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRecursiveFunc-12    	   77001	     15688 ns/op
 BenchmarkRegexMatch-12       	  959680	      1289 ns/op
 shortname: ericlagergren_decimal
 goos: linux
 goarch: amd64
-pkg: github.com/ericlagergren/decimal/benchmarks
+my_stats: github.com/ericlagergren/decimal/benchmarks
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkPi/foo=ericlagergren_(Go)/prec=100-12         	    8700	    136223 ns/op
 BenchmarkPi/foo=ericlagergren_(GDA)/prec=100-12        	    4203	    289502 ns/op
@@ -2247,7 +2247,7 @@ BenchmarkPi/foo=float64/prec=100-12                    	  198914	      6023 ns/o
 shortname: dustin_broadcast
 goos: linux
 goarch: amd64
-pkg: github.com/dustin/go-broadcast
+my_stats: github.com/dustin/go-broadcast
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDirectSend-12            	 3275342	       369.0 ns/op
 BenchmarkParallelDirectSend-12    	 3191943	       377.9 ns/op
@@ -2256,21 +2256,21 @@ BenchmarkMuxBrodcast-12           	 2195155	       535.2 ns/op
 shortname: dustin_humanize
 goos: linux
 goarch: amd64
-pkg: github.com/dustin/go-humanize
+my_stats: github.com/dustin/go-humanize
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkParseBigBytes-12        	  686040	      1470 ns/op
 BenchmarkFtoaRegexTrailing-12    	  602827	      2008 ns/op
 shortname: bloom_bloom
 goos: linux
 goarch: amd64
-pkg: github.com/bits-and-blooms/bloom/v3
+my_stats: github.com/bits-and-blooms/bloom/v3
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkSeparateTestAndAdd-12    	 3373051	       366.6 ns/op
 BenchmarkCombinedTestAndAdd-12    	 3019867	       394.7 ns/op
 shortname: kanzi
 goos: linux
 goarch: amd64
-pkg: github.com/flanglet/kanzi-go/benchmark
+my_stats: github.com/flanglet/kanzi-go/benchmark
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBWTS-12    	1000000000	         0.6185 ns/op
 BenchmarkFPAQ-12    	      67	  17943656 ns/op
@@ -2279,7 +2279,7 @@ BenchmarkMTFT-12    	    1171	   1012558 ns/op
 shortname: commonmark_markdown
 goos: linux
 goarch: amd64
-pkg: gitlab.com/golang-commonmark/markdown
+my_stats: gitlab.com/golang-commonmark/markdown
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRenderSpecNoHTML-12          	     223	   5368165 ns/op
 BenchmarkRenderSpec-12                	     223	   5445370 ns/op
@@ -2287,13 +2287,13 @@ BenchmarkRenderSpecBlackFriday2-12    	     334	   3604865 ns/op
 shortname: klauspost
 goos: linux
 goarch: amd64
-pkg: github.com/dr2chase/benchmarks/klauspost
+my_stats: github.com/dr2chase/benchmarks/klauspost
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 Benchmark_tokens_EstimatedBits-12    	 1549552	       773.9 ns/op	   1.29 MB/s
 shortname: minio
 goos: linux
 goarch: amd64
-pkg: github.com/minio/minio/cmd
+my_stats: github.com/minio/minio/cmd
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDecodehealingTracker-12            	 1773861	       667.6 ns/op	 465.85 MB/s	       0 B/op	       0 allocs/op
 BenchmarkAppendMsgReplicateDecision-12      	1000000000	         0.5742 ns/op	1741.63 MB/s	       0 B/op	       0 allocs/op
@@ -2303,7 +2303,7 @@ BenchmarkMarshalMsgdataUsageCacheInfo-12    	16954125	        69.99 ns/op	      
 shortname: hugo_hugolib
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/hugolib
+my_stats: github.com/gohugoio/hugo/hugolib
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGetPage-12                     	 4936807	       245.6 ns/op
 BenchmarkMergeByLanguage-12             	 1986104	       586.4 ns/op
@@ -2312,7 +2312,7 @@ BenchmarkReplaceShortcodeTokens-12      	  479421	      2988 ns/op
 shortname: ethereum_core
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core
+my_stats: github.com/ethereum/go-ethereum/core
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkPendingDemotion10000-12         	 8829084	       136.0 ns/op
 BenchmarkFuturePromotion10000-12         	463961882	         2.583 ns/op
@@ -2321,7 +2321,7 @@ BenchmarkPoolBatchLocalInsert10000-12    	       2	1032742615 ns/op
 shortname: shopify_sarama
 goos: linux
 goarch: amd64
-pkg: github.com/Shopify/sarama
+my_stats: github.com/Shopify/sarama
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBroker_Open-12               	    7155	    180483 ns/op
 BenchmarkBroker_No_Metrics_Open-12    	    8911	    131373 ns/op
@@ -2331,20 +2331,20 @@ shortname: aws_jsonrpc
 shortname: aws_jsonutil
 goos: linux
 goarch: amd64
-pkg: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
+my_stats: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBuildJSON-12     	  274357	      4278 ns/op
 BenchmarkStdlibJSON-12    	  296816	      4067 ns/op
 shortname: tidwall_tile38
 goos: linux
 goarch: amd64
-pkg: github.com/tidwall/tile38/tests
+my_stats: github.com/tidwall/tile38/tests
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkAll/search/KNN-12     	    3708	    361428 ns/op
 shortname: ethereum_bitutil
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/common/bitutil
+my_stats: github.com/ethereum/go-ethereum/common/bitutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkFastTest2KB-12              	 8969149	       134.0 ns/op
 BenchmarkBaseTest2KB-12              	 1596883	       752.6 ns/op
@@ -2353,13 +2353,13 @@ shortname: ethereum_storage
 shortname: ethereum_ethash
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/consensus/ethash
+my_stats: github.com/ethereum/go-ethereum/consensus/ethash
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashimotoLight-12    	    1000	   1189748 ns/op
 shortname: ethereum_ecies
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/crypto/ecies
+my_stats: github.com/ethereum/go-ethereum/crypto/ecies
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGenerateKeyP256-12     	   64164	     18405 ns/op
 BenchmarkGenSharedKeyP256-12    	   16723	     73439 ns/op
@@ -2367,54 +2367,54 @@ BenchmarkGenSharedKeyS256-12    	   18357	     65406 ns/op
 shortname: ethereum_corevm
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core/vm
+my_stats: github.com/ethereum/go-ethereum/core/vm
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkOpDiv128-12    	11054671	       108.7 ns/op
 shortname: ethereum_trie
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/trie
+my_stats: github.com/ethereum/go-ethereum/trie
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashFixedSize/10K-12           	     181	   6689614 ns/op	 6328596 B/op	   77155 allocs/op
 BenchmarkCommitAfterHashFixedSize/10K-12         	      94	  13164683 ns/op	 9044486 B/op	   79989 allocs/op
 shortname: spexs2
 goos: linux
 goarch: amd64
-pkg: github.com/egonelbre/spexs2/_benchmark
+my_stats: github.com/egonelbre/spexs2/_benchmark
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRun/10k/1-12       	       1	24191743326 ns/op
 BenchmarkRun/10k/16-12      	       1	5122923230 ns/op
 shortname: gonum_blas_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/blas/gonum
+my_stats: gonum.org/v1/gonum/blas/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDnrm2MediumPosInc-12        	  296366	      4021 ns/op
 BenchmarkDasumMediumUnitaryInc-12    	 1405230	       854.9 ns/op
 shortname: gonum_lapack_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/lapack/gonum
+my_stats: gonum.org/v1/gonum/lapack/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDgeev/Circulant10-12         	   27498	     44283 ns/op
 BenchmarkDgeev/Circulant100-12        	      72	  16559131 ns/op
 shortname: gonum_mat
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/mat
+my_stats: gonum.org/v1/gonum/mat
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkMulWorkspaceDense1000Hundredth-12    	     100	 124106997 ns/op
 BenchmarkScaleVec10000Inc20-12                	   50360	     23166 ns/op
 shortname: semver
 goos: linux
 goarch: amd64
-pkg: github.com/Masterminds/semver
+my_stats: github.com/Masterminds/semver
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkValidateVersionTildeFail-12    	 1792782	       672.1 ns/op
 shortname: hugo_helpers
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/helpers
+my_stats: github.com/gohugoio/hugo/helpers
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkStripHTML-12                           	  393746	      3044 ns/op
 BenchmarkTestTruncateWordsToWholeSentence-12    	16403564	        72.43 ns/op
@@ -2422,14 +2422,14 @@ BenchmarkEmojiKyokomiSprint-12                  	   32457	     37074 ns/op
 shortname: k8s_cache
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/tools/cache
+my_stats: k8s.io/client-go/tools/cache
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkListener-12                   	 1398019	       888.8 ns/op	      40 B/op	       1 allocs/op
 BenchmarkReflectorResyncChanMany-12    	 3363382	       359.5 ns/op
 shortname: k8s_workqueue
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/util/workqueue
+my_stats: k8s.io/client-go/util/workqueue
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:1-12         	    3717	    311383 ns/op
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:10-12        	   22678	     53320 ns/op
@@ -2438,7 +2438,7 @@ BenchmarkParallelizeUntil/pieces:999,workers:10,chunkSize:13-12         	   2484
 shortname: gonum_topo
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/topo
+my_stats: gonum.org/v1/gonum/graph/topo
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkTarjanSCCGnp_10_tenth-12     	  146244	      8523 ns/op
 BenchmarkTarjanSCCGnp_1000_half-12    	      13	  89837783 ns/op
@@ -2446,27 +2446,27 @@ shortname: gonum_path
 shortname: gonum_community
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/community
+my_stats: gonum.org/v1/gonum/graph/community
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkLouvainDirectedMultiplex-12    	      62	  18852910 ns/op
 shortname: gonum_traverse
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/traverse
+my_stats: gonum.org/v1/gonum/graph/traverse
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkWalkAllBreadthFirstGnp_10_tenth-12      	  308497	      4133 ns/op
 BenchmarkWalkAllBreadthFirstGnp_1000_tenth-12    	      92	  12700752 ns/op
 shortname: capnproto2
 goos: linux
 goarch: amd64
-pkg: zombiezen.com/go/capnproto2
+my_stats: zombiezen.com/go/capnproto2
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkTextMovementBetweenSegments-12    	    3014	    403694 ns/op
 BenchmarkGrowth_MultiSegment-12            	      99	  11824916 ns/op	  88.68 MB/s	 1648638 B/op	      21 allocs/op
 shortname: uber_zap
 goos: linux
 goarch: amd64
-pkg: go.uber.org/zap/zapcore
+my_stats: go.uber.org/zap/zapcore
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBufferedWriteSyncer/write_file_with_buffer-12         	 4528885	       273.9 ns/op
 BenchmarkMultiWriteSyncer/2_discarder-12                       	121612683	         9.972 ns/op
@@ -2487,7 +2487,7 @@ BenchmarkTeeCheck-12                                           	 6870763	       
 shortname: uber_tally
 goos: linux
 goarch: amd64
-pkg: github.com/uber-go/tally
+my_stats: github.com/uber-go/tally
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBucketsEqual/same_20_values-12     	77932831	        15.27 ns/op
 BenchmarkBucketsEqual/same_20_durations-12  	75128163	        16.16 ns/op
@@ -2496,40 +2496,40 @@ BenchmarkHistogramAllocation-12             	  879288	      1672 ns/op	    1205 
 shortname: bindata
 goos: linux
 goarch: amd64
-pkg: github.com/kevinburke/go-bindata
+my_stats: github.com/kevinburke/go-bindata
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBindata-12         	       4	 250623659 ns/op	  27.39 MB/s	173471684 B/op	    6970 allocs/op
 shortname: cespare_mph
 goos: linux
 goarch: amd64
-pkg: github.com/cespare/mph
+my_stats: github.com/cespare/mph
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBuild-12    	      58	  20493985 ns/op
 shortname: cespare_xxhash
 shortname: gtank_blake2s
 goos: linux
 goarch: amd64
-pkg: github.com/gtank/blake2s
+my_stats: github.com/gtank/blake2s
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHash8K-12    	   51412	     23067 ns/op	 355.13 MB/s
 shortname: nelsam_gxui_interval
 goos: linux
 goarch: amd64
-pkg: git.sr.ht/~nelsam/gxui/interval
+my_stats: git.sr.ht/~nelsam/gxui/interval
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGeneral-12    	 3491844	       344.9 ns/op
 shortname: ajstarks_deck_generate
 shortname: benhoyt_goawk
 goos: linux
 goarch: amd64
-pkg: github.com/benhoyt/goawk/interp
+my_stats: github.com/benhoyt/goawk/interp
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRecursiveFunc-12    	   68198	     15482 ns/op
 BenchmarkRegexMatch-12       	  952086	      1251 ns/op
 shortname: ericlagergren_decimal
 goos: linux
 goarch: amd64
-pkg: github.com/ericlagergren/decimal/benchmarks
+my_stats: github.com/ericlagergren/decimal/benchmarks
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkPi/foo=ericlagergren_(Go)/prec=100-12         	    8652	    139087 ns/op
 BenchmarkPi/foo=ericlagergren_(GDA)/prec=100-12        	    4203	    286588 ns/op
@@ -2540,7 +2540,7 @@ BenchmarkPi/foo=float64/prec=100-12                    	  198949	      6025 ns/o
 shortname: dustin_broadcast
 goos: linux
 goarch: amd64
-pkg: github.com/dustin/go-broadcast
+my_stats: github.com/dustin/go-broadcast
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDirectSend-12            	 3209965	       371.0 ns/op
 BenchmarkParallelDirectSend-12    	 3182776	       375.5 ns/op
@@ -2549,21 +2549,21 @@ BenchmarkMuxBrodcast-12           	 2162484	       543.7 ns/op
 shortname: dustin_humanize
 goos: linux
 goarch: amd64
-pkg: github.com/dustin/go-humanize
+my_stats: github.com/dustin/go-humanize
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkParseBigBytes-12        	  725220	      1492 ns/op
 BenchmarkFtoaRegexTrailing-12    	  600028	      2015 ns/op
 shortname: bloom_bloom
 goos: linux
 goarch: amd64
-pkg: github.com/bits-and-blooms/bloom/v3
+my_stats: github.com/bits-and-blooms/bloom/v3
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkSeparateTestAndAdd-12    	 3379755	       359.2 ns/op
 BenchmarkCombinedTestAndAdd-12    	 3019892	       393.5 ns/op
 shortname: kanzi
 goos: linux
 goarch: amd64
-pkg: github.com/flanglet/kanzi-go/benchmark
+my_stats: github.com/flanglet/kanzi-go/benchmark
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBWTS-12    	1000000000	         0.6133 ns/op
 BenchmarkFPAQ-12    	      67	  17777561 ns/op
@@ -2572,7 +2572,7 @@ BenchmarkMTFT-12    	    1167	   1012376 ns/op
 shortname: commonmark_markdown
 goos: linux
 goarch: amd64
-pkg: gitlab.com/golang-commonmark/markdown
+my_stats: gitlab.com/golang-commonmark/markdown
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRenderSpecNoHTML-12          	     222	   5380401 ns/op
 BenchmarkRenderSpec-12                	     219	   5371798 ns/op
@@ -2580,13 +2580,13 @@ BenchmarkRenderSpecBlackFriday2-12    	     332	   3590141 ns/op
 shortname: klauspost
 goos: linux
 goarch: amd64
-pkg: github.com/dr2chase/benchmarks/klauspost
+my_stats: github.com/dr2chase/benchmarks/klauspost
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 Benchmark_tokens_EstimatedBits-12    	 1546706	       773.8 ns/op	   1.29 MB/s
 shortname: minio
 goos: linux
 goarch: amd64
-pkg: github.com/minio/minio/cmd
+my_stats: github.com/minio/minio/cmd
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDecodehealingTracker-12            	 1789170	       670.3 ns/op	 463.99 MB/s	       0 B/op	       0 allocs/op
 BenchmarkAppendMsgReplicateDecision-12      	1000000000	         0.5746 ns/op	1740.22 MB/s	       0 B/op	       0 allocs/op
@@ -2596,7 +2596,7 @@ BenchmarkMarshalMsgdataUsageCacheInfo-12    	16576492	        69.35 ns/op	      
 shortname: hugo_hugolib
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/hugolib
+my_stats: github.com/gohugoio/hugo/hugolib
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGetPage-12                     	 4976442	       244.3 ns/op
 BenchmarkMergeByLanguage-12             	 1968531	       584.1 ns/op
@@ -2605,7 +2605,7 @@ BenchmarkReplaceShortcodeTokens-12      	  503660	      2956 ns/op
 shortname: ethereum_core
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core
+my_stats: github.com/ethereum/go-ethereum/core
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkPendingDemotion10000-12         	 8801743	       136.5 ns/op
 BenchmarkFuturePromotion10000-12         	464562282	         2.594 ns/op
@@ -2614,7 +2614,7 @@ BenchmarkPoolBatchLocalInsert10000-12    	       2	1029326471 ns/op
 shortname: shopify_sarama
 goos: linux
 goarch: amd64
-pkg: github.com/Shopify/sarama
+my_stats: github.com/Shopify/sarama
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBroker_Open-12               	    7063	    177536 ns/op
 BenchmarkBroker_No_Metrics_Open-12    	    9859	    130296 ns/op
@@ -2624,7 +2624,7 @@ shortname: aws_jsonrpc
 shortname: aws_jsonutil
 goos: linux
 goarch: amd64
-pkg: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
+my_stats: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBuildJSON-12     	  270788	      4200 ns/op
 BenchmarkStdlibJSON-12    	  298218	      4074 ns/op
@@ -2632,7 +2632,7 @@ shortname: tidwall_tile38
 shortname: ethereum_bitutil
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/common/bitutil
+my_stats: github.com/ethereum/go-ethereum/common/bitutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkFastTest2KB-12              	 8899615	       133.7 ns/op
 BenchmarkBaseTest2KB-12              	 1595407	       752.1 ns/op
@@ -2641,13 +2641,13 @@ shortname: ethereum_storage
 shortname: ethereum_ethash
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/consensus/ethash
+my_stats: github.com/ethereum/go-ethereum/consensus/ethash
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashimotoLight-12    	    1002	   1189610 ns/op
 shortname: ethereum_ecies
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/crypto/ecies
+my_stats: github.com/ethereum/go-ethereum/crypto/ecies
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGenerateKeyP256-12     	   59029	     18761 ns/op
 BenchmarkGenSharedKeyP256-12    	   16719	     71766 ns/op
@@ -2655,54 +2655,54 @@ BenchmarkGenSharedKeyS256-12    	   18178	     67191 ns/op
 shortname: ethereum_corevm
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core/vm
+my_stats: github.com/ethereum/go-ethereum/core/vm
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkOpDiv128-12    	11033895	       109.9 ns/op
 shortname: ethereum_trie
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/trie
+my_stats: github.com/ethereum/go-ethereum/trie
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashFixedSize/10K-12           	     178	   6737190 ns/op	 6329190 B/op	   77159 allocs/op
 BenchmarkCommitAfterHashFixedSize/10K-12         	      91	  13075214 ns/op	 9046019 B/op	   79994 allocs/op
 shortname: spexs2
 goos: linux
 goarch: amd64
-pkg: github.com/egonelbre/spexs2/_benchmark
+my_stats: github.com/egonelbre/spexs2/_benchmark
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRun/10k/1-12       	       1	24362073083 ns/op
 BenchmarkRun/10k/16-12      	       1	5291134321 ns/op
 shortname: gonum_blas_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/blas/gonum
+my_stats: gonum.org/v1/gonum/blas/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDnrm2MediumPosInc-12        	  296568	      4019 ns/op
 BenchmarkDasumMediumUnitaryInc-12    	 1404072	       853.9 ns/op
 shortname: gonum_lapack_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/lapack/gonum
+my_stats: gonum.org/v1/gonum/lapack/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDgeev/Circulant10-12         	   27730	     43537 ns/op
 BenchmarkDgeev/Circulant100-12        	      72	  16595165 ns/op
 shortname: gonum_mat
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/mat
+my_stats: gonum.org/v1/gonum/mat
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkMulWorkspaceDense1000Hundredth-12    	     100	 125011873 ns/op
 BenchmarkScaleVec10000Inc20-12                	   49946	     23177 ns/op
 shortname: semver
 goos: linux
 goarch: amd64
-pkg: github.com/Masterminds/semver
+my_stats: github.com/Masterminds/semver
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkValidateVersionTildeFail-12    	 1790096	       673.3 ns/op
 shortname: hugo_helpers
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/helpers
+my_stats: github.com/gohugoio/hugo/helpers
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkStripHTML-12                           	  393832	      3012 ns/op
 BenchmarkTestTruncateWordsToWholeSentence-12    	16038543	        72.35 ns/op
@@ -2710,14 +2710,14 @@ BenchmarkEmojiKyokomiSprint-12                  	   32191	     36950 ns/op
 shortname: k8s_cache
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/tools/cache
+my_stats: k8s.io/client-go/tools/cache
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkListener-12                   	 1425243	       882.5 ns/op	      39 B/op	       1 allocs/op
 BenchmarkReflectorResyncChanMany-12    	 3329342	       360.8 ns/op
 shortname: k8s_workqueue
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/util/workqueue
+my_stats: k8s.io/client-go/util/workqueue
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:1-12         	    3824	    307904 ns/op
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:10-12        	   22770	     53361 ns/op
@@ -2726,7 +2726,7 @@ BenchmarkParallelizeUntil/pieces:999,workers:10,chunkSize:13-12         	   2474
 shortname: gonum_topo
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/topo
+my_stats: gonum.org/v1/gonum/graph/topo
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkTarjanSCCGnp_10_tenth-12     	  148544	      8476 ns/op
 BenchmarkTarjanSCCGnp_1000_half-12    	      13	  89083839 ns/op
@@ -2734,27 +2734,27 @@ shortname: gonum_path
 shortname: gonum_community
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/community
+my_stats: gonum.org/v1/gonum/graph/community
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkLouvainDirectedMultiplex-12    	      63	  18979378 ns/op
 shortname: gonum_traverse
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/traverse
+my_stats: gonum.org/v1/gonum/graph/traverse
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkWalkAllBreadthFirstGnp_10_tenth-12      	  308347	      4147 ns/op
 BenchmarkWalkAllBreadthFirstGnp_1000_tenth-12    	      92	  12702198 ns/op
 shortname: capnproto2
 goos: linux
 goarch: amd64
-pkg: zombiezen.com/go/capnproto2
+my_stats: zombiezen.com/go/capnproto2
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkTextMovementBetweenSegments-12    	    2818	    424993 ns/op
 BenchmarkGrowth_MultiSegment-12            	      94	  11844200 ns/op	  88.53 MB/s	 1648620 B/op	      21 allocs/op
 shortname: uber_zap
 goos: linux
 goarch: amd64
-pkg: go.uber.org/zap/zapcore
+my_stats: go.uber.org/zap/zapcore
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBufferedWriteSyncer/write_file_with_buffer-12         	 4706772	       278.5 ns/op
 BenchmarkMultiWriteSyncer/2_discarder-12                       	121345251	        10.04 ns/op
@@ -2775,7 +2775,7 @@ BenchmarkTeeCheck-12                                           	 6731944	       
 shortname: uber_tally
 goos: linux
 goarch: amd64
-pkg: github.com/uber-go/tally
+my_stats: github.com/uber-go/tally
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBucketsEqual/same_20_values-12     	76797350	        15.26 ns/op
 BenchmarkBucketsEqual/same_20_durations-12  	74920710	        16.26 ns/op
@@ -2784,40 +2784,40 @@ BenchmarkHistogramAllocation-12             	  795276	      1590 ns/op	    1150 
 shortname: bindata
 goos: linux
 goarch: amd64
-pkg: github.com/kevinburke/go-bindata
+my_stats: github.com/kevinburke/go-bindata
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBindata-12         	       4	 252511646 ns/op	  27.19 MB/s	173472850 B/op	    6973 allocs/op
 shortname: cespare_mph
 goos: linux
 goarch: amd64
-pkg: github.com/cespare/mph
+my_stats: github.com/cespare/mph
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBuild-12    	      56	  21379907 ns/op
 shortname: cespare_xxhash
 shortname: gtank_blake2s
 goos: linux
 goarch: amd64
-pkg: github.com/gtank/blake2s
+my_stats: github.com/gtank/blake2s
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHash8K-12    	   50462	     23132 ns/op	 354.14 MB/s
 shortname: nelsam_gxui_interval
 goos: linux
 goarch: amd64
-pkg: git.sr.ht/~nelsam/gxui/interval
+my_stats: git.sr.ht/~nelsam/gxui/interval
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGeneral-12    	 3484617	       344.3 ns/op
 shortname: ajstarks_deck_generate
 shortname: benhoyt_goawk
 goos: linux
 goarch: amd64
-pkg: github.com/benhoyt/goawk/interp
+my_stats: github.com/benhoyt/goawk/interp
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRecursiveFunc-12    	   76831	     15488 ns/op
 BenchmarkRegexMatch-12       	  954637	      1253 ns/op
 shortname: ericlagergren_decimal
 goos: linux
 goarch: amd64
-pkg: github.com/ericlagergren/decimal/benchmarks
+my_stats: github.com/ericlagergren/decimal/benchmarks
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkPi/foo=ericlagergren_(Go)/prec=100-12         	    8619	    136071 ns/op
 BenchmarkPi/foo=ericlagergren_(GDA)/prec=100-12        	    4226	    286567 ns/op
@@ -2828,7 +2828,7 @@ BenchmarkPi/foo=float64/prec=100-12                    	  199056	      6014 ns/o
 shortname: dustin_broadcast
 goos: linux
 goarch: amd64
-pkg: github.com/dustin/go-broadcast
+my_stats: github.com/dustin/go-broadcast
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDirectSend-12            	 3177757	       377.7 ns/op
 BenchmarkParallelDirectSend-12    	 3199852	       379.1 ns/op
@@ -2837,21 +2837,21 @@ BenchmarkMuxBrodcast-12           	 2221555	       527.2 ns/op
 shortname: dustin_humanize
 goos: linux
 goarch: amd64
-pkg: github.com/dustin/go-humanize
+my_stats: github.com/dustin/go-humanize
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkParseBigBytes-12        	  753902	      1483 ns/op
 BenchmarkFtoaRegexTrailing-12    	  599390	      2042 ns/op
 shortname: bloom_bloom
 goos: linux
 goarch: amd64
-pkg: github.com/bits-and-blooms/bloom/v3
+my_stats: github.com/bits-and-blooms/bloom/v3
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkSeparateTestAndAdd-12    	 3373724	       359.7 ns/op
 BenchmarkCombinedTestAndAdd-12    	 2952091	       394.8 ns/op
 shortname: kanzi
 goos: linux
 goarch: amd64
-pkg: github.com/flanglet/kanzi-go/benchmark
+my_stats: github.com/flanglet/kanzi-go/benchmark
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBWTS-12    	1000000000	         0.6152 ns/op
 BenchmarkFPAQ-12    	      67	  17790519 ns/op
@@ -2860,7 +2860,7 @@ BenchmarkMTFT-12    	    1168	   1040622 ns/op
 shortname: commonmark_markdown
 goos: linux
 goarch: amd64
-pkg: gitlab.com/golang-commonmark/markdown
+my_stats: gitlab.com/golang-commonmark/markdown
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRenderSpecNoHTML-12          	     217	   5362323 ns/op
 BenchmarkRenderSpec-12                	     223	   5433947 ns/op
@@ -2868,13 +2868,13 @@ BenchmarkRenderSpecBlackFriday2-12    	     334	   3596701 ns/op
 shortname: klauspost
 goos: linux
 goarch: amd64
-pkg: github.com/dr2chase/benchmarks/klauspost
+my_stats: github.com/dr2chase/benchmarks/klauspost
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 Benchmark_tokens_EstimatedBits-12    	 1550736	       774.0 ns/op	   1.29 MB/s
 shortname: minio
 goos: linux
 goarch: amd64
-pkg: github.com/minio/minio/cmd
+my_stats: github.com/minio/minio/cmd
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDecodehealingTracker-12            	 1779633	       673.2 ns/op	 461.95 MB/s	       0 B/op	       0 allocs/op
 BenchmarkAppendMsgReplicateDecision-12      	1000000000	         0.5748 ns/op	1739.70 MB/s	       0 B/op	       0 allocs/op
@@ -2884,7 +2884,7 @@ BenchmarkMarshalMsgdataUsageCacheInfo-12    	16608610	        69.31 ns/op	      
 shortname: hugo_hugolib
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/hugolib
+my_stats: github.com/gohugoio/hugo/hugolib
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGetPage-12                     	 4944757	       245.4 ns/op
 BenchmarkMergeByLanguage-12             	 1978488	       586.0 ns/op
@@ -2893,7 +2893,7 @@ BenchmarkReplaceShortcodeTokens-12      	  502155	      3140 ns/op
 shortname: ethereum_core
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core
+my_stats: github.com/ethereum/go-ethereum/core
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkPendingDemotion10000-12         	 8826478	       135.8 ns/op
 BenchmarkFuturePromotion10000-12         	464801782	         2.605 ns/op
@@ -2902,7 +2902,7 @@ BenchmarkPoolBatchLocalInsert10000-12    	       2	1046137332 ns/op
 shortname: shopify_sarama
 goos: linux
 goarch: amd64
-pkg: github.com/Shopify/sarama
+my_stats: github.com/Shopify/sarama
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBroker_Open-12               	    7285	    179059 ns/op
 BenchmarkBroker_No_Metrics_Open-12    	    9171	    130996 ns/op
@@ -2912,20 +2912,20 @@ shortname: aws_jsonrpc
 shortname: aws_jsonutil
 goos: linux
 goarch: amd64
-pkg: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
+my_stats: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBuildJSON-12     	  272721	      4231 ns/op
 BenchmarkStdlibJSON-12    	  291838	      4089 ns/op
 shortname: tidwall_tile38
 goos: linux
 goarch: amd64
-pkg: github.com/tidwall/tile38/tests
+my_stats: github.com/tidwall/tile38/tests
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkAll/search/KNN-12     	    3765	    373166 ns/op
 shortname: ethereum_bitutil
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/common/bitutil
+my_stats: github.com/ethereum/go-ethereum/common/bitutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkFastTest2KB-12              	 8964139	       133.6 ns/op
 BenchmarkBaseTest2KB-12              	 1592335	       753.7 ns/op
@@ -2934,13 +2934,13 @@ shortname: ethereum_storage
 shortname: ethereum_ethash
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/consensus/ethash
+my_stats: github.com/ethereum/go-ethereum/consensus/ethash
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashimotoLight-12    	    1004	   1192119 ns/op
 shortname: ethereum_ecies
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/crypto/ecies
+my_stats: github.com/ethereum/go-ethereum/crypto/ecies
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGenerateKeyP256-12     	   64944	     18330 ns/op
 BenchmarkGenSharedKeyP256-12    	   16714	     71670 ns/op
@@ -2948,54 +2948,54 @@ BenchmarkGenSharedKeyS256-12    	   18373	     65395 ns/op
 shortname: ethereum_corevm
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core/vm
+my_stats: github.com/ethereum/go-ethereum/core/vm
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkOpDiv128-12    	10978178	       108.3 ns/op
 shortname: ethereum_trie
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/trie
+my_stats: github.com/ethereum/go-ethereum/trie
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashFixedSize/10K-12           	     182	   6586061 ns/op	 6328885 B/op	   77157 allocs/op
 BenchmarkCommitAfterHashFixedSize/10K-12         	      82	  13023021 ns/op	 9044608 B/op	   79990 allocs/op
 shortname: spexs2
 goos: linux
 goarch: amd64
-pkg: github.com/egonelbre/spexs2/_benchmark
+my_stats: github.com/egonelbre/spexs2/_benchmark
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRun/10k/1-12       	       1	24164674093 ns/op
 BenchmarkRun/10k/16-12      	       1	5260550490 ns/op
 shortname: gonum_blas_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/blas/gonum
+my_stats: gonum.org/v1/gonum/blas/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDnrm2MediumPosInc-12        	  296583	      4024 ns/op
 BenchmarkDasumMediumUnitaryInc-12    	 1404775	       854.4 ns/op
 shortname: gonum_lapack_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/lapack/gonum
+my_stats: gonum.org/v1/gonum/lapack/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDgeev/Circulant10-12         	   27625	     43381 ns/op
 BenchmarkDgeev/Circulant100-12        	      70	  16537190 ns/op
 shortname: gonum_mat
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/mat
+my_stats: gonum.org/v1/gonum/mat
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkMulWorkspaceDense1000Hundredth-12    	     100	 123867336 ns/op
 BenchmarkScaleVec10000Inc20-12                	   51014	     23339 ns/op
 shortname: semver
 goos: linux
 goarch: amd64
-pkg: github.com/Masterminds/semver
+my_stats: github.com/Masterminds/semver
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkValidateVersionTildeFail-12    	 1788772	       671.2 ns/op
 shortname: hugo_helpers
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/helpers
+my_stats: github.com/gohugoio/hugo/helpers
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkStripHTML-12                           	  385592	      3018 ns/op
 BenchmarkTestTruncateWordsToWholeSentence-12    	16554922	        72.43 ns/op
@@ -3003,14 +3003,14 @@ BenchmarkEmojiKyokomiSprint-12                  	   32156	     37524 ns/op
 shortname: k8s_cache
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/tools/cache
+my_stats: k8s.io/client-go/tools/cache
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkListener-12                   	 1380334	       887.2 ns/op	      40 B/op	       1 allocs/op
 BenchmarkReflectorResyncChanMany-12    	 3302350	       361.4 ns/op
 shortname: k8s_workqueue
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/util/workqueue
+my_stats: k8s.io/client-go/util/workqueue
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:1-12         	    3668	    310405 ns/op
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:10-12        	   22641	     53523 ns/op
@@ -3019,7 +3019,7 @@ BenchmarkParallelizeUntil/pieces:999,workers:10,chunkSize:13-12         	   2474
 shortname: gonum_topo
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/topo
+my_stats: gonum.org/v1/gonum/graph/topo
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkTarjanSCCGnp_10_tenth-12     	  147676	      8471 ns/op
 BenchmarkTarjanSCCGnp_1000_half-12    	      13	  89806690 ns/op
@@ -3027,27 +3027,27 @@ shortname: gonum_path
 shortname: gonum_community
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/community
+my_stats: gonum.org/v1/gonum/graph/community
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkLouvainDirectedMultiplex-12    	      54	  18823460 ns/op
 shortname: gonum_traverse
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/traverse
+my_stats: gonum.org/v1/gonum/graph/traverse
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkWalkAllBreadthFirstGnp_10_tenth-12      	  307542	      4179 ns/op
 BenchmarkWalkAllBreadthFirstGnp_1000_tenth-12    	      92	  12758856 ns/op
 shortname: capnproto2
 goos: linux
 goarch: amd64
-pkg: zombiezen.com/go/capnproto2
+my_stats: zombiezen.com/go/capnproto2
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkTextMovementBetweenSegments-12    	    2985	    397757 ns/op
 BenchmarkGrowth_MultiSegment-12            	     100	  11826221 ns/op	  88.67 MB/s	 1648595 B/op	      21 allocs/op
 shortname: uber_zap
 goos: linux
 goarch: amd64
-pkg: go.uber.org/zap/zapcore
+my_stats: go.uber.org/zap/zapcore
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBufferedWriteSyncer/write_file_with_buffer-12         	 4289934	       279.1 ns/op
 BenchmarkMultiWriteSyncer/2_discarder-12                       	100000000	        10.04 ns/op
@@ -3068,7 +3068,7 @@ BenchmarkTeeCheck-12                                           	 7233229	       
 shortname: uber_tally
 goos: linux
 goarch: amd64
-pkg: github.com/uber-go/tally
+my_stats: github.com/uber-go/tally
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBucketsEqual/same_20_values-12     	77606250	        15.45 ns/op
 BenchmarkBucketsEqual/same_20_durations-12  	75554670	        15.83 ns/op
@@ -3077,40 +3077,40 @@ BenchmarkHistogramAllocation-12             	  893330	      1676 ns/op	    1203 
 shortname: bindata
 goos: linux
 goarch: amd64
-pkg: github.com/kevinburke/go-bindata
+my_stats: github.com/kevinburke/go-bindata
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBindata-12         	       5	 257455009 ns/op	  26.66 MB/s	173475022 B/op	    6975 allocs/op
 shortname: cespare_mph
 goos: linux
 goarch: amd64
-pkg: github.com/cespare/mph
+my_stats: github.com/cespare/mph
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBuild-12    	      57	  21345858 ns/op
 shortname: cespare_xxhash
 shortname: gtank_blake2s
 goos: linux
 goarch: amd64
-pkg: github.com/gtank/blake2s
+my_stats: github.com/gtank/blake2s
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHash8K-12    	   51744	     23090 ns/op	 354.78 MB/s
 shortname: nelsam_gxui_interval
 goos: linux
 goarch: amd64
-pkg: git.sr.ht/~nelsam/gxui/interval
+my_stats: git.sr.ht/~nelsam/gxui/interval
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGeneral-12    	 3408021	       345.5 ns/op
 shortname: ajstarks_deck_generate
 shortname: benhoyt_goawk
 goos: linux
 goarch: amd64
-pkg: github.com/benhoyt/goawk/interp
+my_stats: github.com/benhoyt/goawk/interp
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRecursiveFunc-12    	   77550	     15753 ns/op
 BenchmarkRegexMatch-12       	  954085	      1261 ns/op
 shortname: ericlagergren_decimal
 goos: linux
 goarch: amd64
-pkg: github.com/ericlagergren/decimal/benchmarks
+my_stats: github.com/ericlagergren/decimal/benchmarks
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkPi/foo=ericlagergren_(Go)/prec=100-12         	    8560	    136169 ns/op
 BenchmarkPi/foo=ericlagergren_(GDA)/prec=100-12        	    4238	    287448 ns/op
@@ -3121,7 +3121,7 @@ BenchmarkPi/foo=float64/prec=100-12                    	  199203	      6016 ns/o
 shortname: dustin_broadcast
 goos: linux
 goarch: amd64
-pkg: github.com/dustin/go-broadcast
+my_stats: github.com/dustin/go-broadcast
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDirectSend-12            	 3271098	       365.8 ns/op
 BenchmarkParallelDirectSend-12    	 3150580	       374.3 ns/op
@@ -3130,21 +3130,21 @@ BenchmarkMuxBrodcast-12           	 2146798	       560.1 ns/op
 shortname: dustin_humanize
 goos: linux
 goarch: amd64
-pkg: github.com/dustin/go-humanize
+my_stats: github.com/dustin/go-humanize
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkParseBigBytes-12        	  735810	      1474 ns/op
 BenchmarkFtoaRegexTrailing-12    	  594610	      2013 ns/op
 shortname: bloom_bloom
 goos: linux
 goarch: amd64
-pkg: github.com/bits-and-blooms/bloom/v3
+my_stats: github.com/bits-and-blooms/bloom/v3
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkSeparateTestAndAdd-12    	 3371010	       362.1 ns/op
 BenchmarkCombinedTestAndAdd-12    	 2975656	       393.5 ns/op
 shortname: kanzi
 goos: linux
 goarch: amd64
-pkg: github.com/flanglet/kanzi-go/benchmark
+my_stats: github.com/flanglet/kanzi-go/benchmark
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBWTS-12    	1000000000	         0.6151 ns/op
 BenchmarkFPAQ-12    	      67	  18039522 ns/op
@@ -3153,7 +3153,7 @@ BenchmarkMTFT-12    	    1162	   1012433 ns/op
 shortname: commonmark_markdown
 goos: linux
 goarch: amd64
-pkg: gitlab.com/golang-commonmark/markdown
+my_stats: gitlab.com/golang-commonmark/markdown
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRenderSpecNoHTML-12          	     220	   5369966 ns/op
 BenchmarkRenderSpec-12                	     223	   5386978 ns/op
@@ -3161,13 +3161,13 @@ BenchmarkRenderSpecBlackFriday2-12    	     332	   3598948 ns/op
 shortname: klauspost
 goos: linux
 goarch: amd64
-pkg: github.com/dr2chase/benchmarks/klauspost
+my_stats: github.com/dr2chase/benchmarks/klauspost
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 Benchmark_tokens_EstimatedBits-12    	 1547083	       776.3 ns/op	   1.29 MB/s
 shortname: minio
 goos: linux
 goarch: amd64
-pkg: github.com/minio/minio/cmd
+my_stats: github.com/minio/minio/cmd
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDecodehealingTracker-12            	 1761045	       675.9 ns/op	 460.16 MB/s	       0 B/op	       0 allocs/op
 BenchmarkAppendMsgReplicateDecision-12      	1000000000	         0.5765 ns/op	1734.71 MB/s	       0 B/op	       0 allocs/op
@@ -3177,7 +3177,7 @@ BenchmarkMarshalMsgdataUsageCacheInfo-12    	17068821	        75.98 ns/op	      
 shortname: hugo_hugolib
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/hugolib
+my_stats: github.com/gohugoio/hugo/hugolib
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGetPage-12                     	 4863909	       247.4 ns/op
 BenchmarkMergeByLanguage-12             	 1922254	       584.3 ns/op
@@ -3186,7 +3186,7 @@ BenchmarkReplaceShortcodeTokens-12      	  495216	      3011 ns/op
 shortname: ethereum_core
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core
+my_stats: github.com/ethereum/go-ethereum/core
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkPendingDemotion10000-12         	 8846908	       135.9 ns/op
 BenchmarkFuturePromotion10000-12         	464392411	         2.584 ns/op
@@ -3195,7 +3195,7 @@ BenchmarkPoolBatchLocalInsert10000-12    	       2	1068273416 ns/op
 shortname: shopify_sarama
 goos: linux
 goarch: amd64
-pkg: github.com/Shopify/sarama
+my_stats: github.com/Shopify/sarama
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBroker_Open-12               	    7270	    156639 ns/op
 BenchmarkBroker_No_Metrics_Open-12    	   10000	    115606 ns/op
@@ -3205,20 +3205,20 @@ shortname: aws_jsonrpc
 shortname: aws_jsonutil
 goos: linux
 goarch: amd64
-pkg: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
+my_stats: github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkBuildJSON-12     	  243721	      4557 ns/op
 BenchmarkStdlibJSON-12    	  296672	      4748 ns/op
 shortname: tidwall_tile38
 goos: linux
 goarch: amd64
-pkg: github.com/tidwall/tile38/tests
+my_stats: github.com/tidwall/tile38/tests
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkAll/search/KNN-12     	    3608	    372844 ns/op
 shortname: ethereum_bitutil
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/common/bitutil
+my_stats: github.com/ethereum/go-ethereum/common/bitutil
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkFastTest2KB-12              	 8953611	       134.2 ns/op
 BenchmarkBaseTest2KB-12              	 1595103	       752.4 ns/op
@@ -3227,13 +3227,13 @@ shortname: ethereum_storage
 shortname: ethereum_ethash
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/consensus/ethash
+my_stats: github.com/ethereum/go-ethereum/consensus/ethash
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashimotoLight-12    	    1000	   1198118 ns/op
 shortname: ethereum_ecies
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/crypto/ecies
+my_stats: github.com/ethereum/go-ethereum/crypto/ecies
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkGenerateKeyP256-12     	   64957	     18376 ns/op
 BenchmarkGenSharedKeyP256-12    	   16648	     71887 ns/op
@@ -3241,54 +3241,54 @@ BenchmarkGenSharedKeyS256-12    	   18073	     65521 ns/op
 shortname: ethereum_corevm
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/core/vm
+my_stats: github.com/ethereum/go-ethereum/core/vm
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkOpDiv128-12    	11057997	       108.7 ns/op
 shortname: ethereum_trie
 goos: linux
 goarch: amd64
-pkg: github.com/ethereum/go-ethereum/trie
+my_stats: github.com/ethereum/go-ethereum/trie
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkHashFixedSize/10K-12           	     180	   6676831 ns/op	 6328472 B/op	   77155 allocs/op
 BenchmarkCommitAfterHashFixedSize/10K-12         	      91	  13184545 ns/op	 9045815 B/op	   79993 allocs/op
 shortname: spexs2
 goos: linux
 goarch: amd64
-pkg: github.com/egonelbre/spexs2/_benchmark
+my_stats: github.com/egonelbre/spexs2/_benchmark
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkRun/10k/1-12       	       1	24328362927 ns/op
 BenchmarkRun/10k/16-12      	       1	5258620427 ns/op
 shortname: gonum_blas_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/blas/gonum
+my_stats: gonum.org/v1/gonum/blas/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDnrm2MediumPosInc-12        	  297286	      4019 ns/op
 BenchmarkDasumMediumUnitaryInc-12    	 1405396	       863.1 ns/op
 shortname: gonum_lapack_native
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/lapack/gonum
+my_stats: gonum.org/v1/gonum/lapack/gonum
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkDgeev/Circulant10-12         	   27513	     43580 ns/op
 BenchmarkDgeev/Circulant100-12        	      72	  16498306 ns/op
 shortname: gonum_mat
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/mat
+my_stats: gonum.org/v1/gonum/mat
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkMulWorkspaceDense1000Hundredth-12    	     100	 123835933 ns/op
 BenchmarkScaleVec10000Inc20-12                	   50194	     23336 ns/op
 shortname: semver
 goos: linux
 goarch: amd64
-pkg: github.com/Masterminds/semver
+my_stats: github.com/Masterminds/semver
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkValidateVersionTildeFail-12    	 1790604	       670.0 ns/op
 shortname: hugo_helpers
 goos: linux
 goarch: amd64
-pkg: github.com/gohugoio/hugo/helpers
+my_stats: github.com/gohugoio/hugo/helpers
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkStripHTML-12                           	  385947	      3008 ns/op
 BenchmarkTestTruncateWordsToWholeSentence-12    	16393773	        72.31 ns/op
@@ -3296,14 +3296,14 @@ BenchmarkEmojiKyokomiSprint-12                  	   32362	     37562 ns/op
 shortname: k8s_cache
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/tools/cache
+my_stats: k8s.io/client-go/tools/cache
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkListener-12                   	 1392754	       882.3 ns/op	      40 B/op	       1 allocs/op
 BenchmarkReflectorResyncChanMany-12    	 3370126	       356.7 ns/op
 shortname: k8s_workqueue
 goos: linux
 goarch: amd64
-pkg: k8s.io/client-go/util/workqueue
+my_stats: k8s.io/client-go/util/workqueue
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:1-12         	    3927	    312741 ns/op
 BenchmarkParallelizeUntil/pieces:1000,workers:10,chunkSize:10-12        	   22821	     53239 ns/op
@@ -3312,7 +3312,7 @@ BenchmarkParallelizeUntil/pieces:999,workers:10,chunkSize:13-12         	   2486
 shortname: gonum_topo
 goos: linux
 goarch: amd64
-pkg: gonum.org/v1/gonum/graph/topo
+my_stats: gonum.org/v1/gonum/graph/topo
 cpu: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
 BenchmarkTarjanSCCGnp_10_tenth-12     	  146815	      8428 ns/op
 BenchmarkTarjanSCCGnp_1000_half-12    	      13	  89079307 ns/op

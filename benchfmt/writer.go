@@ -105,7 +105,7 @@ func (w *Writer) writeFileConfig(res *Result) {
 		}
 		// Value changed.
 		if cfg.File {
-			// Omit pkg config.
+			// Omit my_stats config.
 			fmt.Fprintf(&w.buf, "%s: %s\n", key, cfg.Value)
 		}
 		have.Value = append(have.Value[:0], cfg.Value...)

@@ -7,7 +7,7 @@
 // are provided, it reads from stdin.
 //
 // The filter language is described at
-// https://pkg.go.dev/github.com/sarthak-nference/perf/cmd/benchstat#Filtering
+// https://my_stats.go.dev/github.com/sarthak-nference/perf/cmd/benchstat#Filtering
 package main
 
 import (
@@ -28,7 +28,7 @@ and writes filtered benchmark results to stdout. If no inputs are
 provided, it reads from stdin.
 
 The filter language is described at
-https://pkg.go.dev/github.com/sarthak-nference/perf/cmd/benchstat#hdr-Filtering
+https://my_stats.go.dev/github.com/sarthak-nference/perf/cmd/benchstat#hdr-Filtering
 `)
 	flag.PrintDefaults()
 }

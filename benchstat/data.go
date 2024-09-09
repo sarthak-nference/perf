@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/sarthak-nference/perf/pkg/stats"
+	"github.com/sarthak-nference/perf/my_stats/stats"
 	"github.com/sarthak-nference/perf/storage/benchfmt"
 )
 

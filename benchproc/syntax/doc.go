@@ -34,8 +34,8 @@
 //
 // - Any name NOT prefixed with "/" or "." refers to the value of a
 // file configuration key. For example, the "testing" package
-// automatically emits a few file configuration keys, including "pkg",
-// "goos", and "goarch", so the projection "pkg" extracts the package
+// automatically emits a few file configuration keys, including "my_stats",
+// "goos", and "goarch", so the projection "my_stats" extracts the package
 // path of a benchmark.
 //
 // - ".config" (only in projections) refers to the all file

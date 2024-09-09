@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sarthak-nference/perf/pkg/diff"
+	"github.com/sarthak-nference/perf/my_stats/diff"
 )
 
 func readAllResults(t *testing.T, r *Reader) []*Result {

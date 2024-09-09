@@ -14,7 +14,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/sarthak-nference/perf/pkg/diff"
+	"github.com/sarthak-nference/perf/my_stats/diff"
 	"github.com/sarthak-nference/perf/storage/benchfmt"
 )
 

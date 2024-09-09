@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/sarthak-nference/perf/pkg/diff"
+	"github.com/sarthak-nference/perf/my_stats/diff"
 )
 
 func TestNewWriter(t *testing.T) {

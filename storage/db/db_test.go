@@ -17,7 +17,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sarthak-nference/perf/pkg/diff"
+	"github.com/sarthak-nference/perf/my_stats/diff"
 	"github.com/sarthak-nference/perf/storage/benchfmt"
 	. "github.com/sarthak-nference/perf/storage/db"
 	"github.com/sarthak-nference/perf/storage/db/dbtest"
